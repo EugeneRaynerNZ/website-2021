@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import Creations from '@/views/Creations.vue'
 import Freestyler from '@/views/creations/Freestyler.vue'
+import Main from '@/views/creations/Main.vue'
 import Design from '@/views/Design.vue'
 import Code from '@/views/Code.vue'
 import Blog from '@/views/Blog.vue'
@@ -23,7 +24,8 @@ const routes = [
     component: Creations,
 
     children: [
-      { path: 'freestyler', name: 'freestyler', component: Freestyler },
+      { path: '', name: 'Creations', component: Main },
+      { path: 'freestyler', name: 'Freestyler', component: Freestyler },
     ]
   },
   {
