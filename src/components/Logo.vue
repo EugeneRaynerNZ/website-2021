@@ -1,6 +1,6 @@
 <template>
     
-    <svg id="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 360 366" style="enable-background:new 0 0 360 366;" xml:space="preserve">
+    <svg class="logo logo--large" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 360 366" style="enable-background:new 0 0 360 366;" xml:space="preserve">
         <g>
             <path class="st0" d="M245.6,95.1c0,0-21.8,22.1-11.4,38.3c2.2,3.4,6.7,6.4,12.8,9.8c5.4-12.8,13.5-23.6,25.9-28
                 c40.2-14.4,81,104.9,78.7,52.4c-2-7-4.6-14.6-7.8-22.8C317.9,78.8,276,70.3,245.6,95.1z"/>
