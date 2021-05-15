@@ -1,0 +1,14 @@
+nav{
+    height: 72px;
+    ul{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        li{
+            margin-right: 30px;
+            a{
+                color: $black;
+            }
+        }
+    }
+}
