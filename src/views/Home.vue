@@ -1,6 +1,12 @@
 <template>
   <div id="home">
-      <!-- logo n stuff goes here -->
+    <!-- logo n stuff goes here -->
+    <div class="home-logo">
+        <Logo />
+        <div class="home-logo--text">
+            <h1>Eugene<br>Rayner</h1>
+        </div>
+    </div>
     <Header title="Lover of all things Digital" subtitle="Interactive Developer, Designer &amp; Creator"/>
     <section class="about image-text-block">
         <div class="me"></div>
@@ -14,6 +20,7 @@
 
 <script>
 import Header from '@/components/Header.vue'
+import Logo from '@/components/Logo.vue'
 
 export default {
   name: 'Home',
@@ -27,7 +34,8 @@ export default {
       }
   },
   components: {
-    Header
+    Header,
+    Logo
   }
 }
 </script>

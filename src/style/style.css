@@ -86,4 +86,37 @@ header {
   font-size: 20px;
   margin-bottom: 8px; }
 
+#logo .st0 {
+  fill: #64C6F2; }
+#logo .st1 {
+  fill: #F3ABC6; }
+#logo .st2 {
+  fill: #71CAF3; }
+#logo .st3 {
+  fill: #55B7EE; }
+#logo .st4 {
+  fill: #40A6E9; }
+#logo .st5 {
+  opacity: 0.5;
+  fill: #55B7EE; }
+#logo .st6 {
+  fill: #0091BA; }
+#logo .st7 {
+  opacity: 0.5;
+  fill: #40A6E9; }
+#logo .st8 {
+  fill: #FFFFFF; }
+#logo .st9 {
+  fill: #C0E7F9; }
+#logo .st10 {
+  opacity: 0;
+  fill: #EC0C90; }
+#logo .st11 {
+  opacity: 0.14;
+  fill: #FFFFFF; }
+#logo .st12 {
+  fill: #191C25; }
+#logo .st13 {
+  fill: #EC8BAB; }
+
 /*# sourceMappingURL=style.css.map */
