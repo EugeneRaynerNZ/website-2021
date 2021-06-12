@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 
-$primary: blue;
+$primary: #3176ff;
+$secondary: #9633ff;
+$header: #97c1ff;
 $black: #000;
+
+.background-primary{
+    background-color: $primary;
+}
+
+.background-secondary{
+    background-color: $secondary;
+}
+
+.background-header{
+    fill: $header;
+}
 
 html{
     font-family: 'Rubik', sans-serif;

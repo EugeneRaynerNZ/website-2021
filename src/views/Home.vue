@@ -1,26 +1,21 @@
 <template>
     <div id="home">
       <!-- logo n stuff goes here -->
-      <div class="home-logo">
-          <Logo />
-          <div class="home-logo--text">
-              <h1>Eugene<br>Rayner</h1>
-          </div>
-      </div>
       <Header title="Lover of all things Digital" subtitle="Interactive Developer, Designer &amp; Creator"/>
-      <section class="about image-text-block">
+      
+      <main class="max-width">
+        <section class="about image-text-block">
           <div class="me"></div>
           <div class="content">
               <h3>What I am about</h3>
               <p v-for="(paragraph, index) in aboutContent" :key="'content-' + index">{{paragraph}}</p>
           </div>
-      </section>
-      <main>
+        </section>
         <h2>Lover of all things digital</h2>
-        <ImageParagraph :title="creator.title" :paragraphs="creator.text"/>
-        <ImageParagraph :title="code.title" :paragraphs="code.text"/>
-        <ImageParagraph :title="design.title" :paragraphs="design.text"/>
-        <ImageParagraph :title="blog.title" :paragraphs="blog.text"/>
+        <ImageParagraph :title="creator.title" :paragraphs="creator.text" image="creator" :linkText="creator.button.text" :link="creator.button.link"/>
+        <ImageParagraph :title="code.title" :paragraphs="code.text" image="octocat" :reverse="true" :linkText="code.button.text"/>
+        <ImageParagraph :title="design.title" :paragraphs="design.text" image="figma" :linkText="design.button.text"/>
+        <!-- <ImageParagraph :title="blog.title" :paragraphs="blog.text"/> -->
       </main>
     </div>
 </template>
@@ -28,14 +23,12 @@
 
 <script>
 import Header from '@/components/Header.vue'
-import Logo from '@/components/Logo.vue'
 import ImageParagraph from '@/components/ImageParagraph.vue'
 
 export default {
   name: 'Home',
   components: {
     Header,
-    Logo,
     ImageParagraph
   },
   data() {
@@ -49,9 +42,13 @@ export default {
             title: 'First and Foremost I am a Creator',
             text: [
               "All of the skills I have acquired over the years have been in the pursuit of becoming a great creator.",
-              "I have a vivid imagination, and I see how the world works through glass eyes, literally.",
+              "I have a vivid imagination, and I see how the <a href=''>world</a> works through glass eyes, literally.",
               "Check out some of my creations and if you would like to create something with me, Send me a message."
-            ]
+            ],
+            button: {
+              text: 'View my work',
+              link: "/creations"
+            }
           },
           code: {
             title: 'I love to code',
@@ -59,24 +56,30 @@ export default {
               "All of the skills I have acquired over the years have been in the pursuit of becoming a great creator.",
               "I have a vivid imagination, and I see how the world works through glass eyes, literally.",
               "Check out some of my creations and if you would like to create something with me, Send me a message."
-            ]
+            ],
+            button: {
+              text: 'View my code'
+            }
           },
           design: {
-            title: 'First and Foremost I am a Creator',
+            title: 'A designer at heart',
             text: [
               "All of the skills I have acquired over the years have been in the pursuit of becoming a great creator.",
               "I have a vivid imagination, and I see how the world works through glass eyes, literally.",
               "Check out some of my creations and if you would like to create something with me, Send me a message."
-            ]
+            ],
+            button: {
+              text: 'View my designs'
+            }
           },
-          blog: {
-            title: 'I write blogs',
-            text: [
-              "I love to write, it comes with being a creator.",
-              "My blogs aren’t specific to any subject, sometimes I write about code, sometimes design. Sometimes I write about a real world problem that I am trying to solve.",
-              "If you’re interested in reading what i’ve got to say, head on over and read some of my blogs."
-            ]
-          }
+          // blog: {
+          //   title: 'I write blogs',
+          //   text: [
+          //     "I love to write, it comes with being a creator.",
+          //     "My blogs aren’t specific to any subject, sometimes I write about code, sometimes design. Sometimes I write about a real world problem that I am trying to solve.",
+          //     "If you’re interested in reading what i’ve got to say, head on over and read some of my blogs."
+          //   ]
+          // }
       }
   },
 }
@@ -91,15 +94,11 @@ export default {
   .home-logo--text{
     font-size: 151px;
     text-transform: uppercase;
-  }
-
-  .logo--large{
-   flex: 0 0 40%
+    flex: 1;
   }
 
   #home main h2{
-    text-align: center;
-    padding: 120px;
+    padding: 120px 0;
     font-weight: 100;
     font-size: 50px;
   }

@@ -1,7 +1,11 @@
-#nav{
-    height: 72px;
-    display: flex;
-    align-items: center;
+.nav{
+    background: $header;
+
+    &--container{
+        display: flex;
+        align-items: center;
+        height: 72px;
+    }
 
     a{
         color: $black;
