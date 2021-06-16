@@ -1,13 +1,13 @@
 header{
     text-align: left;
-    padding: 120px 0;
+    padding: 192px 0 120px 0;
     background: $header; 
     position: relative;
     margin-bottom: 150px;
     color: white;
-
+ 
     &.small-header{
-        padding: 60px 0;
+        padding: 132px 0 60px 0;
     }
 
     svg{

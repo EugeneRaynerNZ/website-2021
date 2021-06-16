@@ -71,7 +71,10 @@ a {
   text-decoration: none; }
 
 .nav {
-  background: #6533ff; }
+  background: #6533ff;
+  position: fixed;
+  z-index: 1000;
+  width: 100%; }
   .nav--container {
     display: flex;
     align-items: center;
@@ -83,13 +86,13 @@ a {
 
 header {
   text-align: left;
-  padding: 120px 0;
+  padding: 192px 0 120px 0;
   background: #6533ff;
   position: relative;
   margin-bottom: 150px;
   color: white; }
   header.small-header {
-    padding: 60px 0; }
+    padding: 132px 0 60px 0; }
   header svg {
     bottom: -70px;
     position: absolute;
