@@ -1,5 +1,21 @@
 .footer{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    padding: 100px 0 50px 0;
+    .social-links{
+        display: flex;
+        a{
+            margin-right: 10px;
+            width: 30px;
+            
+            svg{
+                width: 100%;
+            }
+
+            .st0{fill:$primary;}
+        }
+    }
+
+    p{
+        color: $primary;
+        margin-top: 5px;
+    }
 }

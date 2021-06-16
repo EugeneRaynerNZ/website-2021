@@ -1,5 +1,5 @@
 .main-button{
-    background: $primary;
+    background: $secondary;
     border-radius: 4px;
     box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.15);
     padding: 10px;
@@ -16,6 +16,13 @@
     }
 
     &--icon{
+
+        &.large{
+            svg{
+                width: 15px;
+            }
+        }
+
         svg{
             width: 8px;
             .st0{

@@ -1,0 +1,24 @@
+.title{
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+
+    span{
+        background: white;
+        z-index: 2;
+        font-size: 30px;
+        position: relative;
+        padding: 0 10px;
+    }
+
+    &:before{
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 0;
+        height: 1px;
+        background: $primary;
+        width: 100%;
+    }
+}

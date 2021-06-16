@@ -1,10 +1,20 @@
 .image-text-block{
-    h3{
-        font-size: 28px;
-        margin-bottom: 14px;
+    display: flex;
+    margin-bottom: 75px;
+
+    .content{
+        flex: 0 0 60%;
+        h3{
+            font-size: 28px;
+            margin-bottom: 14px;
+        }
+        p{
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
     }
-    p{
-        font-size: 20px;
-        margin-bottom: 8px;
+
+    &--image{
+        flex: 1;
     }
 }

@@ -1,15 +1,19 @@
 <template>
   <div id="creations">
-    <Header title="I love to create." subtitle="Check out some creations below"/>
+    <Header title="I love to create." subtitle="Check out some creations below" :small-header="true"/>
     {{$route.params.project}}
-    <Paragraph 
-      v-for="(project, index) in projects"
+    <main class="max-width">
+      <Paragraph 
+      v-for="(type, index) in types"
       :key="'project-' + index"
-      :title="project.title" 
-      :paragraph="project.paragraph" 
-      :button="project.button"
+      :title="type.title" 
+      :heading="type.heading" 
+      :paragraph="type.paragraph" 
+      :button="type.button"
+      :tags="type.tags"
       />
       <router-view/>
+    </main>
   </div>
   
 </template>
@@ -26,22 +30,36 @@ export default {
   },
   data() {
     return {
-      projects: [
+      types: [
         { 
-          title: 'Title',
-          paragraph: 'When I was younger, I loved creating music. I used a program called Ableton Live and my friend and I used to get together over a few drinks and create raps and a backing track. Recently i’ve been inspired by an up and coming artist named Harry Mack. He’s the best freestyler I have ever come across. I thought it would be handy for other inspiring musicians if there was a freestyle application that spat out subjects over a backing track of their choosing so I created the Harry Mack Freestyling App.',
+          title: 'Website Design & Development',
+          heading: 'Grow your brand and have an online presence',
+          paragraph: 'Need a website and don’t know where to start? I can help! I can create custom websites that you can update and manage, and it’s easy!',
           button: {
-            link: 'creations/freestyler',
-            text: 'Check it out'
-          }
+            link: 'creations/website-development',
+            text: 'View my websites'
+          },
+          tags: ['CSS (SCSS)', 'Javascript', 'VueJS']
         },
         {
-          title: 'Title 2',
-          paragraph: 'When I was younger, I loved creating music. I used a program called Ableton Live and my friend and I used to get together over a few drinks and create raps and a backing track. Recently i’ve been inspired by an up and coming artist named Harry Mack. He’s the best freestyler I have ever come across. I thought it would be handy for other inspiring musicians if there was a freestyle application that spat out subjects over a backing track of their choosing so I created the Harry Mack Freestyling App.',
+          title: 'HTML5 Banners',
+          heading: 'Increase brand awareness & visits to your website',
+          paragraph: 'Advertising banners increase your brand awareness and visits to your website by appearing in ad space all over the internet.',
           button: {
-            link: 'creations/freestyler',
-            text: 'Check it out'
-          }
+            link: 'creations/banner-development',
+            text: 'View my banners'
+          },
+          tags: ['HTML5', 'CSS', 'Javascript', 'Greensock', 'Adobe Animate']
+        },
+        {
+          title: 'Email Development',
+          heading: 'The most cost effective type of marketing',
+          paragraph: 'Emails that stand out and work on all major devices are key to growing your business. Increase website traffic & potential customers at almost no cost with email marketing.',
+          button: {
+            link: 'creations/email-development',
+            text: 'View my emails'
+          },
+          tags: ['HTML5', 'CSS', 'Responsive', 'Litmus', 'Email on Acid']
         }
       ]
     }
