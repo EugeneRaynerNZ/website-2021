@@ -1,0 +1,134 @@
+@media only screen and (max-width: 600px) {
+
+    // hide nav for now
+    nav{
+        display: none;
+    }
+
+    // show nav
+    .hamburger-container{
+        display: block;
+    }
+    
+    .max-width{
+        padding-bottom: 0;
+    }
+
+    header{
+        padding: 80px 0 60px 0;
+        text-align: center;
+        margin-bottom: 100px;
+
+        &.small-header{
+            padding: 60px 0;
+        }
+
+        .svg--container{
+            svg{
+                min-width: 600px;
+                top: 15px;
+                bottom: auto;
+            }
+        }
+
+        h1{
+            font-size: 32px;
+            font-weight: 300;
+        }
+
+        h2{
+            font-size: 22px;
+            font-weight: 300;
+        }
+    }
+
+    .title {
+        max-width: 400px;
+        margin: 0 auto 40px auto;
+
+        &:before{
+            content: none;
+        }
+
+        span{
+            font-size: 36px;
+            display: block;
+        }
+    }
+
+    // components
+    .image-text-block{
+        flex-direction: column-reverse;
+    }
+
+    .paragraph-image-block{
+        flex-direction: column-reverse;
+        padding: 20px 0 80px 0;
+
+        &.reverse{
+            flex-direction: column-reverse;
+
+            .paragraph-image-block--text{
+                padding: 0;
+            }
+        }
+
+        &--text{
+            margin-top: 30px;
+            padding: 0;
+
+            h3{
+                font-size: 28px;
+            }
+        }
+
+        svg{
+            max-height: 200px;
+        }
+    }
+
+    .paragraph-container{
+        flex-direction: column;
+        
+        .paragraph-block{
+            margin-bottom: 0;
+        }
+        
+        .paragraph-tags{
+            display: none;
+        }
+    }
+
+    .project{
+        margin: 0 0 80px 0;
+
+        &:last-child{
+            margin-bottom: 40px;
+        }
+
+        .content{
+            flex-direction: column-reverse;
+        }
+    }
+
+    .tags{
+        display: flex;
+        flex-wrap: wrap;
+        .tag{
+            flex: 0 1 49%;
+            padding: 6px 0 6px 0;
+
+            &:nth-child(even){
+                margin-left: 3px;
+            }
+
+            &:nth-child(odd){
+                margin-right: 3px;
+            }
+        }
+    }
+
+    .footer{
+        padding: 20px 0;
+    }
+}

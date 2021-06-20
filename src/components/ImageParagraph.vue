@@ -34,36 +34,3 @@ export default {
   }
 }
 </script>
-
-<style>
-    .paragraph-image-block{
-        display: flex;
-        padding: 80px 0;
-    }
-
-    .paragraph-image-block.reverse{
-        flex-direction: row-reverse;
-    }
-
-    .paragraph-image-block.reverse .paragraph-image-block--text{
-        padding-left: 30px;
-        padding-right: 0;
-    }
-
-    .paragraph-image-block .image{
-        flex: 0 0 30%
-    }
-
-    .paragraph-image-block--text{
-        padding-right: 30px;
-    }
-
-    .paragraph-image-block--text h3{
-        font-size: 36px;
-        margin-bottom: 20px;
-    }
-
-    .paragraph-image-block--text p{
-        margin-top: 15px;
-    }
-</style>

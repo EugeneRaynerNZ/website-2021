@@ -1,6 +1,7 @@
 // Globals
 @import 'global';
 @import 'nav';
+@import 'hamburger';
 @import 'header';
 @import 'buttons';
 @import 'title';
@@ -9,3 +10,5 @@
 
 // Components
 @import 'image-text-block';
+@import 'paragraph-image-block';
+@import 'project';

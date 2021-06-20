@@ -21,6 +21,7 @@
       
     </div>
     <div class="paragraph-tags">
+      <h3>Main Skills Used</h3>
       <Tag v-for="(tag, index) in tags" :key="'v- '+ index" :name="tag"/>
     </div>
     </div>
@@ -78,5 +79,10 @@ export default {
 
   .paragraph-tags{
      flex: 1;
+  }
+
+  .paragraph-tags h3{
+    font-size: 20px;
+    margin-bottom: 8px;
   }
 </style>

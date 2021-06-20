@@ -85,33 +85,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.project{
-    margin: 50px 0 150px 0;
-}
-.project h2{
-    font-size: 36px;
-}
-.project h3{
-    font-size: 24px;
-    margin-top: 30px;
-}
-.project .content{
-    width: 100%;
-    display: flex;
-}
-
-.project .content p{
-    margin-top: 10px;
-}
-
-.project .content .creative{
-    flex: 0 1 80%;
-    padding-right: 40px;
-}
-
-.project .content .built-with{
-    flex: 1 0 20%;
-}
-</style>

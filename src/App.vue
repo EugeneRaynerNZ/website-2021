@@ -1,5 +1,12 @@
 <template>
   <div id="app">
+
+    <Slide class="hamburger-container">
+      <a id="home" href="#">
+        <span>Home</span>
+      </a>
+    </Slide>
+
     <nav class="nav">
       <div class="nav--container max-width">
         <router-link to="/">Eugene Rayner</router-link>
@@ -9,6 +16,9 @@
         <router-link to="/contact">Contact</router-link>
       </div>
     </nav>
+
+    
+
     <router-view/>
 
     <footer class="footer">
@@ -78,3 +88,12 @@
   </div>
 </template>
 
+<script>
+import { Slide } from 'vue-burger-menu'
+
+export default {
+    components: {
+        Slide // Register your component
+    }
+}
+</script>
