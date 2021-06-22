@@ -58,6 +58,10 @@ table {
 html {
   font-family: 'Rubik', sans-serif; }
 
+p {
+  font-size: 18px;
+  line-height: 1.2; }
+
 .max-width {
   max-width: 880px;
   margin: 0 auto;
@@ -209,12 +213,33 @@ header {
   .main-button--text {
     color: white;
     padding-right: 10px; }
-  .main-button--icon.large svg {
-    width: 15px; }
-  .main-button--icon svg {
-    width: 8px; }
-    .main-button--icon svg .st0 {
-      fill: white; }
+  .main-button--icon {
+    display: flex;
+    align-items: center; }
+    .main-button--icon.large svg {
+      width: 15px; }
+    .main-button--icon svg {
+      width: 8px; }
+      .main-button--icon svg .st0 {
+        fill: white; }
+
+.breadcrumb-button {
+  background: white;
+  display: inline-flex;
+  align-items: center; }
+  .breadcrumb-button--text {
+    color: #6533ff;
+    padding-left: 5px; }
+  .breadcrumb-button--icon {
+    display: flex;
+    align-items: center; }
+    .breadcrumb-button--icon.large svg {
+      width: 15px;
+      height: auto;
+      fill: #6533ff; }
+
+.inline-link {
+  font-weight: 500; }
 
 .title {
   text-align: center;
@@ -265,12 +290,13 @@ header {
   display: flex;
   margin-bottom: 75px; }
   .image-text-block .content {
-    flex: 0 0 60%; }
+    flex: 0 0 60%;
+    padding-right: 80px; }
     .image-text-block .content h3 {
       font-size: 28px;
       margin-bottom: 14px; }
     .image-text-block .content p {
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 8px; }
   .image-text-block--image {
     flex: 1; }
@@ -281,12 +307,13 @@ header {
   .paragraph-image-block.reverse {
     flex-direction: row-reverse; }
     .paragraph-image-block.reverse .paragraph-image-block--text {
-      padding-left: 30px;
+      padding-left: 80px;
       padding-right: 0; }
   .paragraph-image-block .image {
-    flex: 0 0 30%; }
+    flex: 0 0 30%;
+    max-height: 220px; }
   .paragraph-image-block--text {
-    padding-right: 30px; }
+    padding-right: 80px; }
     .paragraph-image-block--text h3 {
       font-size: 36px;
       margin-bottom: 20px; }
@@ -343,6 +370,11 @@ header {
   fill: #191C25; }
 .logo .st13 {
   fill: #EC8BAB; }
+
+.illustrator .st0 {
+  fill: #330000; }
+.illustrator .st1 {
+  fill: #FF9A00; }
 
 .creator .st0 {
   fill: #BDD1FF; }

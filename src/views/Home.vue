@@ -19,7 +19,7 @@
         <Title :heading="'What do I do?'"/>
         <ImageParagraph :title="creator.title" :paragraphs="creator.text" image="creator" :linkText="creator.button.text" :link="creator.button.link"/>
         <ImageParagraph :title="code.title" :paragraphs="code.text" image="octocat" :reverse="true" :linkText="code.button.text"/>
-        <ImageParagraph :title="design.title" :paragraphs="design.text" image="figma" :linkText="design.button.text"/>
+        <ImageParagraph :title="design.title" :paragraphs="design.text" image="illustrator" :linkText="design.button.text"/>
         <!-- <ImageParagraph :title="blog.title" :paragraphs="blog.text"/> -->
       </main>
     </div>
@@ -50,7 +50,7 @@ export default {
             title: 'First and Foremost I am a Creator',
             text: [
               "All of the skills I have acquired over the years have been in the pursuit of becoming a great creator.",
-              "I have a vivid imagination, and I see how the <a href=''>world</a> works through glass eyes, literally.",
+              "I have a vivid imagination, and I see how the world works through glass eyes, literally.",
               "Check out some of my creations and if you would like to create something with me, Send me a message."
             ],
             button: {
@@ -66,7 +66,8 @@ export default {
               "In my spare time I love coming up with quirky creations on Codepen, or coming up with ideas for new projects and making them happen!"
             ],
             button: {
-              text: 'View my code'
+              text: 'View my code',
+              link: "/code"
             }
           },
           design: {
@@ -77,7 +78,8 @@ export default {
               "Check out some of my creations and if you would like to create something with me, Send me a message."
             ],
             button: {
-              text: 'View my designs'
+              text: 'View my designs',
+              link: "/design"
             }
           },
           me: Me

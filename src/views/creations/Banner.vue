@@ -2,20 +2,31 @@
     <div class="website">
     <Header title="HTML5 Banners" :small-header="true"/>
     <div class="max-width">
+      <div>
+            <router-link to="/creations" class="breadcrumb-button">
+                <span class="breadcrumb-button--icon large">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"/></svg>
+                </span>
+                <span class="breadcrumb-button--text">Back to my creations</span> 
+                
+            </router-link>
+        </div>
         <div class="project" v-for="project in projects" :key="'v-' + project.name">
             <h2>{{project.name}}</h2>
             <div class="content">
                 <div class="creative">
                     <h3>Creative Input</h3>
                     <p v-for="(creative, index) in project.creative" :key="'v-' + index">{{creative}}</p>
-                    <router-link target="_blank" :to="project.link" class="main-button">
-                        <span class="main-button--text">View the banners</span> 
-                        <span class="main-button--icon">
-                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7.4 12" style="enable-background:new 0 0 7.4 12;" xml:space="preserve">
-                            <path class="st0" d="M1.4,0L0,1.4L4.6,6L0,10.6L1.4,12l6-6L1.4,0z"/>
-                          </svg>
-                        </span>
-                    </router-link>
+                    <template v-if="project.link">
+                      <router-link target="_blank" :to="project.link" class="main-button">
+                          <span class="main-button--text">View the banners</span> 
+                          <span class="main-button--icon">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7.4 12" style="enable-background:new 0 0 7.4 12;" xml:space="preserve">
+                              <path class="st0" d="M1.4,0L0,1.4L4.6,6L0,10.6L1.4,12l6-6L1.4,0z"/>
+                            </svg>
+                          </span>
+                      </router-link>
+                    </template>
                 </div>
                 <div class="built-with">
                     <h3>Built With</h3>

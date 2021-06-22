@@ -14,7 +14,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'Home',
     component: Home
   },
@@ -25,14 +25,14 @@ const routes = [
 
     children: [
       { path: '', name: 'Creations', component: Main },
-      { path: 'website-development', name: 'Website', component: Website },
-      { path: 'banner-development', name: 'Banner', component: Banner },
-      { path: 'email-development', name: 'Email', component: Email },
+      { path: 'website-development', name: 'Websites', component: Website },
+      { path: 'banner-development', name: 'Banners', component: Banner },
+      { path: 'email-development', name: 'Emails', component: Email },
     ]
   },
   {
     path: '/design',
-    name: 'Design',
+    name: 'Designs',
     component: Design
   },
   {
@@ -51,7 +51,15 @@ const router = new VueRouter({
   routes,
   scrollBehavior() {
     document.getElementById('app').scrollIntoView();
-}
+  }
 })
+
+router.beforeEach((to, from, next) => {
+  console.log(to)
+  if(to !== undefined){
+    document.title = `${process.env.VUE_APP_TITLE} | ${to.name}`
+  }
+  next()
+}) 
 
 export default router
