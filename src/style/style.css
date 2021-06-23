@@ -401,6 +401,16 @@ header {
 .creator .st52 {
   fill: #548EE2; }
 
+.image-text-block--image .me {
+  transition: all .4s; }
+.image-text-block--image svg path {
+  transition: all 1s;
+  transform-origin: 50% 50%; }
+.image-text-block--image:hover .me {
+  transform: translateX(100%) rotate(100deg); }
+.image-text-block--image:hover #cyan-cog {
+  transform: rotate(360deg); }
+
 @media only screen and (max-width: 600px) {
   nav {
     display: block;
@@ -451,6 +461,7 @@ header {
   .image-text-block {
     flex-direction: column-reverse; }
     .image-text-block .content {
+      margin-top: 30px;
       padding-right: 0; }
 
   .paragraph-image-block {

@@ -1,0 +1,22 @@
+.image-text-block--image{
+
+    .me{
+        transition: all .4s;
+    }
+
+    svg path{
+        transition: all 1s;
+        transform-origin: 50% 50%;
+    }
+
+    &:hover{
+        .me{
+            transform: translateX(100%) rotate(100deg)
+        }
+
+        #cyan-cog{
+            transform: rotate(360deg)
+        }
+    }
+}
+
