@@ -60,7 +60,7 @@ export default {
               name: 'AA Insurance',
               banner: {
                 embedUrl: '/banners/aai/index.html',
-                projectTitle: ''
+                projectTitle: 'AAI'
               },
               creative: [
                   'AA Insurance is New Zealands most trusted insurance provider.',
