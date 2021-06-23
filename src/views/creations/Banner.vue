@@ -12,12 +12,13 @@
             </router-link>
         </div>
         <div class="project" v-for="project in projects" :key="'v-' + project.name">
-            <h2>{{project.name}}</h2>
+            <Title :heading="project.name" />
+            <Banner :embedUrl="project.banner.embedUrl" :projectTitle="project.banner.projectTitle"/>
             <div class="content">
                 <div class="creative">
                     <h3>Creative Input</h3>
                     <p v-for="(creative, index) in project.creative" :key="'v-' + index">{{creative}}</p>
-                    <template v-if="project.link">
+                    <!-- <template v-if="project.link">
                       <router-link target="_blank" :to="project.link" class="main-button">
                           <span class="main-button--text">View the banners</span> 
                           <span class="main-button--icon">
@@ -26,7 +27,7 @@
                             </svg>
                           </span>
                       </router-link>
-                    </template>
+                    </template> -->
                 </div>
                 <div class="built-with">
                     <h3>Built With</h3>
@@ -44,15 +45,23 @@
 
 <script>
 import Header from '@/components/Header.vue'
+import Title from '@/components/Title.vue'
+import Banner from '@/components/Banner.vue'
+
+// import Aai from '.'
 
 export default {
   name: 'Website',
-  components: {Header},
+  components: {Header, Title, Banner},
   data() {
       return {
           projects: [
             {
               name: 'AA Insurance',
+              banner: {
+                embedUrl: '/banners/aai/index.html',
+                projectTitle: ''
+              },
               creative: [
                   'AA Insurance is New Zealands most trusted insurance provider.',
                   'These banners were built using the usual HTML/CSS but with custom Javascript and Greensock.',
@@ -63,6 +72,10 @@ export default {
             },
             {
               name: 'Crown Casinos Australia',
+              banner: {
+                embedUrl: '/banners/crown/index.html',
+                projectTitle: 'Crown Casinos'
+              },
               creative: [
                   'The Crown Casinos are a chain of Casinos operating in Australia. The banners images and animations are made to represent their logo.'
               ],
@@ -71,6 +84,10 @@ export default {
             },
             {
               name: 'nib New Zealand',
+              banner: {
+                embedUrl: '/banners/nib/families_template_300x250.html',
+                projectTitle: 'nib Insurance'
+              },
               creative: [
                   'This campaign was targeted at those looking to enter a compeition - win a Fitbit.',
                   'They are built using Adobe Animate and then custom coded for the Google Display Network.',

@@ -1,0 +1,51 @@
+<!-- HTML5 Standard Click Tag -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Crown_q2-dining_MREC_300x250_dining
+    </title>
+    <meta name="ad.size" content="width=300,height=250">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+        // Default clicktag URL - this will usually be overidden at the ad platform
+        var clickTag = "http://example.com";
+
+        window.onload = function() {
+            bannerInit();
+
+            document.getElementById("background_exit_ad").onclick = function() {
+                window.open(window.clickTag);
+            };
+        };
+    </script>
+</head>
+
+<body>
+    <div id="container_ad">
+        <div id="content_ad">
+            <!-- Your banner ad content goes here -->
+            <img src="bg.jpg" id="mainbg">
+            <img src="fire1.jpg" id="fire1">
+            <img src="fire2.jpg" id="fire2">
+            <img src="fire3.jpg" id="fire3">
+            <img src="fire4.jpg" id="fire4">
+            <img src="fire6.jpg" id="fire5">
+            <img src="fire7.jpg" id="fire7">
+            <span id="rectangle"></span>
+            <img src="copy1.png" id="copy1">
+            <img src="copy2.png" id="copy2">
+            <img src="copy3.png" id="copy3">
+            <img src="cta.png" id="cta">
+            <img src="logo.png" id="logo">
+            <img src="tc.png" id="tc">
+        </div>
+        <button id="background_exit_ad"></button>
+    </div>
+</body>
+
+</html>

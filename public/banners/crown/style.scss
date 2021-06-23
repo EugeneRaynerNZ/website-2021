@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+$bannerBackColor: #42743a;
+$bordercolor:#ccc;
+//banner background color and border color
+@mixin position($bottom, $left, $opacity, $position) {
+    bottom: $bottom;
+    left: $left;
+    opacity: $opacity;
+    position: $position;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Default style, feel free to remove if not needed. */
+
+body,
+body * {
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    font: 100%/1.5 Arial, sans-serif;
+}
+
+
+/* Div layer for the entire banner. */
+
+#container_ad {
+    -ms-transform-origin: 0% 0%;
+    /* IE 9 */
+    -webkit-transform-origin: 0% 0%;
+    /* Safari and Chrome */
+    -moz-transform-origin: 0% 0%;
+    /* Firefox */
+    -o-transform-origin: 0% 0%;
+    /* Opera */
+    position: absolute;
+    // width and height are 2px less than the expected 
+    // size to accommodate the 1px border on the ad
+    width: 298px;
+    height: 248px;
+    overflow: hidden;
+    border: 1px solid $bordercolor;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+    z-index: 20;
+}
+
+#content_ad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background: $bannerBackColor; // url(background.jpg);
+}
+
+
+/* Invisible button for background clickthrough.
+  The background url here is a hack to get around a stacking order
+  bug in Windows 8 IE10. For deatils see:
+  http://stackoverflow.com/questions/6914822/absolute-positioned-anchor-tag-with-no-text-not-clickable-in-ie
+*/
+
+#background_exit_ad {
+    background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7") 0 0 repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 400;
+    outline: 0;
+    border: 0;
+}
+
+#mainbg {
+    @include position(0,
+    0,
+    1,
+    absolute);
+    z-index: 1;
+}
+
+#fire1 {
+    @include position(0,
+    47px,
+    0,
+    absolute);
+    z-index: 2;
+}
+
+#fire2 {
+    @include position(0,
+    47px,
+    0,
+    absolute);
+    z-index: 3;
+}
+
+#fire3 {
+    @include position(0,
+    47px,
+    0,
+    absolute);
+    z-index: 4;
+}
+
+#fire4 {
+    @include position(0,
+    47px,
+    0,
+    absolute);
+    z-index: 5;
+}
+
+#fire5 {
+    @include position(0,
+    47px,
+    0,
+    absolute);
+    z-index: 6;
+}
+
+#fire6 {
+    @include position(0,
+    47px,
+    0,
+    absolute);
+    z-index: 7;
+}
+
+#fire7 {
+    @include position(0,
+    47px,
+    0,
+    absolute);
+    z-index: 8;
+}
+
+#rectangle {
+    @include position(0,
+    0,
+    0,
+    absolute);
+    z-index: 8;
+    background: $bannerBackColor;
+    width: 300px;
+    height: 250px;
+}
+
+#copy1 {
+    @include position(116px,
+    88px,
+    0,
+    absolute);
+    z-index: 9;
+}
+
+#copy2 {
+    @include position(120px,
+    67px,
+    0,
+    absolute);
+    z-index: 10;
+}
+
+#copy3 {
+    @include position(167px,
+    57px,
+    0,
+    absolute);
+    z-index: 10;
+}
+
+#cta {
+    @include position(112px,
+    51px,
+    0,
+    absolute);
+    z-index: 10;
+}
+
+#logo {
+    @include position(28px,
+    70px,
+    0,
+    absolute);
+    z-index: 10;
+}
+
+#tc {
+    @include position(12px,
+    122px,
+    0,
+    absolute);
+    z-index: 10;
+}
+
+:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}

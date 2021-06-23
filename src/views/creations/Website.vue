@@ -49,7 +49,7 @@ import Tag from '@/components/Tag.vue'
 
 import DentalArtistry from '@/assets/project-examples/websites/dental-artistry.png'
 import Jesters from '@/assets/project-examples/websites/jesters.png'
-import Fanz from '@/assets/project-examples/websites/fanz.png'
+import Whitefield from '@/assets/project-examples/websites/whitefield.jpg'
 
 export default {
   name: 'Website',
@@ -69,6 +69,17 @@ export default {
                 tags: ['Silverstripe', 'Slick Slider', 'Custom Javascript', 'CSS (SCSS)']
             },
             {
+                name: 'Whitefield Australia',
+                imageUrl: Whitefield,
+                creative: [
+                    'Whitefield Australia is an investment company with huge potential.',
+                    'The website was built using PHP, SCSS, Bootstrap and Javascript.',
+                    'The complex svg animations were coded using Greensock.'
+                ],
+                link: 'https://conference.franchiseassociation.org.nz/',
+                tags: ['PHP', 'SCSS', 'Bootstrap', 'Greensock']
+            },
+            {
                 name: 'Dental Artistry',
                 imageUrl: DentalArtistry,
                 creative: [
@@ -78,17 +89,6 @@ export default {
                 ],
                 link: 'https://dentalartistry.co.nz/',
                 tags: ['Wordpress', 'Bootstrap', 'Slick Slider', 'Contact Form 7', 'Greensock']
-            },
-            {
-                name: 'Franchise Association of NZ - Conference Website',
-                imageUrl: Fanz,
-                creative: [
-                    'The Franchise Association of New Zealand is a company that helps franchisee’s manage their work.',
-                    'This website was built to provide a platform for upcoming events.',
-                    'The website was built using Wordpress, so that the Franchise Association could manage the content themselves.'
-                ],
-                link: 'https://conference.franchiseassociation.org.nz/',
-                tags: ['Wordpress', 'Bootstrap', 'Contact Form 7']
             }
           ]
       }

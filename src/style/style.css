@@ -92,79 +92,6 @@ a {
     margin-right: 30px;
     display: block; }
 
-.hamburger-container {
-  position: relative;
-  z-index: 1010;
-  display: none; }
-
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
-  cursor: pointer; }
-
-.bm-burger-bars {
-  background-color: #373a47; }
-
-.line-style {
-  position: absolute;
-  height: 20%;
-  left: 0;
-  right: 0; }
-
-.cross-style {
-  position: absolute;
-  top: 12px;
-  right: 2px;
-  cursor: pointer; }
-
-.bm-cross {
-  background: #bdc3c7; }
-
-.bm-cross-button {
-  height: 24px;
-  width: 24px; }
-
-.bm-menu {
-  height: 100%;
-  /* 100% Full-height */
-  width: 0;
-  /* 0 width - change this with JavaScript */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1000;
-  /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #3f3f41;
-  /* Black*/
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 60px;
-  /* Place content 60px from the top */
-  transition: 0.5s;
-  /*0.5 second transition effect to slide in the sidenav*/ }
-
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3); }
-
-.bm-item-list {
-  color: #b8b7ad;
-  margin-left: 10%;
-  font-size: 20px; }
-
-.bm-item-list > * {
-  display: flex;
-  text-decoration: none;
-  padding: 0.7em; }
-
-.bm-item-list > * > span {
-  margin-left: 10px;
-  font-weight: 700;
-  color: white; }
-
 header {
   text-align: left;
   padding: 192px 0 120px 0;
@@ -260,16 +187,6 @@ header {
     height: 1px;
     background: #6533ff;
     width: 100%; }
-
-.tag {
-  background: #ff4b33;
-  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.15);
-  padding: 8px;
-  text-align: center;
-  border-radius: 4px;
-  margin-top: 6px; }
-  .tag--text {
-    color: white; }
 
 .footer {
   padding: 100px 0 50px 0; }
@@ -485,13 +402,24 @@ header {
 
 @media only screen and (max-width: 600px) {
   nav {
-    display: none; }
+    display: block;
+    bottom: 0; }
+
+  .nav a {
+    margin-right: 0; }
+  .nav--container {
+    justify-content: space-between;
+    text-align: center; }
 
   .hamburger-container {
     display: block; }
 
+  .breadcrumb-button {
+    margin-bottom: 30px; }
+
   .max-width {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    padding-top: 0; }
 
   header {
     padding: 80px 0 60px 0;
@@ -521,6 +449,8 @@ header {
 
   .image-text-block {
     flex-direction: column-reverse; }
+    .image-text-block .content {
+      padding-right: 0; }
 
   .paragraph-image-block {
     flex-direction: column-reverse;
@@ -563,6 +493,7 @@ header {
         margin-right: 3px; }
 
   .footer {
-    padding: 20px 0; } }
+    padding: 20px 0;
+    margin-bottom: 60px; } }
 
 /*# sourceMappingURL=style.css.map */
