@@ -11,7 +11,7 @@
               <h3>What I am about</h3>
               <p v-for="(paragraph, index) in aboutContent" :key="'content-' + index">{{paragraph}}</p>
           </div>
-          <div class="image-text-block--image" style="position: relative;">
+          <div @mouseover="hoverIn" @mouseout="hoverOut" class="image-text-block--image" style="position: relative;">
             <div class="me2">
               <svg version="1.1" id="cogs" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 982.4 982.3" style="enable-background:new 0 0 982.4 982.3;" xml:space="preserve">
                 <path class="st0" d="M396.6,756.6C396.6,756.6,396.6,756.5,396.6,756.6c0-33.3-27.1-60.3-60.3-60.3c-33.3,0-60.3,27.1-60.3,60.3v0
@@ -98,7 +98,7 @@
                   c7.9-0.3,15.6-1.6,23-3.7l31.2,18.9l20.8-13.1l-4.5-35.8c4.2-4.7,7.9-9.9,11.2-15.5l35.7-8.1l5.9-23.9L697,834.8
                   C696.7,827.4,695.6,820.1,693.6,813z M574.4,908.6c-38.4-12.7-59.1-54.1-46.4-92.4c12.7-38.4,54.1-59.1,92.4-46.4
                   c38.4,12.7,59.1,54.1,46.4,92.4C654.2,900.5,612.8,921.3,574.4,908.6z"/>
-                <g>
+                <g id="large-cog">
                   <path class="st4" d="M467.5,542.9c69,0,125-55.9,125-125c0-69-56-125-125-125c-69,0-125,55.9-125,125
                     C342.5,487,398.5,542.9,467.5,542.9z M467.5,301.5c64.3,0,116.5,52.1,116.5,116.5c0,64.3-52.1,116.5-116.5,116.5
                     C403.2,534.4,351,482.3,351,418C351,353.6,403.2,301.5,467.5,301.5z"/>
@@ -146,6 +146,8 @@ import Header from '@/components/Header.vue'
 import ImageParagraph from '@/components/ImageParagraph.vue'
 import Title from '@/components/Title.vue'
 import Me from '@/assets/me.svg'
+import { gsap } from "gsap";
+
 
 export default {
   name: 'Home',
@@ -200,6 +202,17 @@ export default {
           me: Me
       }
   },
+  methods:{
+    hoverIn(){
+      gsap.to('.me', {x:200, rotate: 120, duration: 0.2})
+      gsap.to('#cyan-cog', {transformOrigin: '50% 50%', rotate: 360, duration: 5, repeat:-1, ease:"Linear.easeNone"})
+      gsap.to('#large-cog', {transformOrigin: '50% 50%', rotate: -360, duration: 10, repeat:-1, ease:"Linear.easeNone"})
+    },
+    hoverOut(){
+      gsap.to('.me', {x:0, rotate: 0, duration: 0.2})
+      gsap.to('#cyan-cog', {x:0, duration: 3})
+    }
+  }
 }
 </script>
 
