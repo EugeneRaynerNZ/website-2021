@@ -3,7 +3,7 @@
 
     <nav class="nav">
       <div class="nav--container max-width">
-        <router-link to="/home">Home</router-link>
+        <router-link to="/">Home</router-link>
         <router-link to="/creations">Creations</router-link>
         <router-link to="/code">Code</router-link>
         <router-link to="/design">Design</router-link>

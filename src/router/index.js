@@ -2,10 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import Creations from '@/views/Creations.vue'
-import Website from '@/views/creations/Website.vue'
-import Banner from '@/views/creations/Banner.vue'
-import Email from '@/views/creations/Email.vue'
-import Main from '@/views/creations/Main.vue'
+import CreationsWebsite from '@/views/creations/Website.vue'
+import CreationsBanner from '@/views/creations/Banner.vue'
+import CreationsEmail from '@/views/creations/Email.vue'
 import Design from '@/views/Design.vue'
 import Code from '@/views/Code.vue'
 import Contact from '@/views/Contact.vue'
@@ -14,20 +13,22 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/home',
+    path: '/',
     name: 'Home',
     component: Home
   },
   {
-    path: '/creations',
-    name: 'Creations',
+    path: '/creations/',
+    component: Creations,
+  },
+  {
+    path: '/creations/:id',
     component: Creations,
 
     children: [
-      { path: '', name: 'Creations', component: Main },
-      { path: 'website-development', name: 'Websites', component: Website },
-      { path: 'banner-development', name: 'Banners', component: Banner },
-      { path: 'email-development', name: 'Emails', component: Email },
+      { path: 'website-development', component: CreationsWebsite },
+      { path: 'banner-development', component: CreationsBanner },
+      { path: 'email-development', component: CreationsEmail },
     ]
   },
   {

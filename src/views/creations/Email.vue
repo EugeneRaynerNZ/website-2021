@@ -1,6 +1,6 @@
 <template>
     <div class="website">
-    <Header title="Websites" :small-header="true"/>
+    <Header title="Emails" :small-header="true"/>
     <div class="max-width">
         <div>
             <router-link to="/creations" class="breadcrumb-button">
@@ -18,15 +18,14 @@
                 <div class="creative">
                     <h3>Creative Input</h3>
                     <p v-for="(creative, index) in project.creative" :key="'v-' + index">{{creative}}</p>
-                    <a style="margin-top: 20px;" target="_blank" :href="project.link" class="main-button">
+                    <router-link :to="{name: 'Example'}" class="main-button">
                         <span class="main-button--text">View the email</span> 
-                        <span class="main-button--icon large">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.6 16.6" style="enable-background:new 0 0 16.6 16.6;" xml:space="preserve">
-                            <path class="st0" d="M14.1,14.5H2.4V2.9h5.8V1.2H2.4c-0.9,0-1.7,0.8-1.7,1.7v11.7c0,0.9,0.7,1.7,1.7,1.7h11.7c0.9,0,1.7-0.7,1.7-1.7
-                                V8.7h-1.7V14.5z M9.9,1.2v1.7h3L4.7,11l1.2,1.2L14.1,4v3h1.7V1.2H9.9z"/>
-                            </svg>
+                        <span class="main-button--icon">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7.4 12" style="enable-background:new 0 0 7.4 12;" xml:space="preserve">
+                            <path class="st0" d="M1.4,0L0,1.4L4.6,6L0,10.6L1.4,12l6-6L1.4,0z"/>
+                        </svg>
                         </span>
-                    </a>
+                    </router-link>
                 </div>
                 <div class="built-with">
                     <h3>Built With</h3>
