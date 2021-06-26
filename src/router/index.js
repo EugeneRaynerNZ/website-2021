@@ -5,6 +5,7 @@ import Creations from '@/views/Creations.vue'
 import CreationsWebsite from '@/views/creations/Website.vue'
 import CreationsBanner from '@/views/creations/Banner.vue'
 import CreationsEmail from '@/views/creations/Email.vue'
+import CreationsEmailExample from '@/views/creations/email-development/Example.vue'
 import Design from '@/views/Design.vue'
 import Code from '@/views/Code.vue'
 import Contact from '@/views/Contact.vue'
@@ -18,18 +19,29 @@ const routes = [
     component: Home
   },
   {
-    path: '/creations/',
+    path: '/creations',
+    name: 'creations',
     component: Creations,
   },
   {
-    path: '/creations/:id',
-    component: Creations,
-
-    children: [
-      { path: 'website-development', component: CreationsWebsite },
-      { path: 'banner-development', component: CreationsBanner },
-      { path: 'email-development', component: CreationsEmail },
-    ]
+    path: '/creations/website-development',
+    name: 'Website Development',
+    component: CreationsWebsite,
+  },
+  {
+    path: '/creations/banner-development',
+    name: 'Banner Development',
+    component: CreationsBanner,
+  },
+  {
+    path: '/creations/email-development',
+    name: 'Email Development',
+    component: CreationsEmail,
+  },
+  {
+    path: '/creations/email-development/example',
+    name: 'Email Example',
+    component: CreationsEmailExample,
   },
   {
     path: '/design',

@@ -17,18 +17,13 @@
 export default {
   name: 'Example',
   props: {
-      title: String,
+      title: String
   },
   data(){
       return {
           link: '/emails/VOD0452_Vodafone_TV_Welcome/VOD0452_Vodafone_TV_Welcome.html'
       }
   },
-  methods: {
-      reloadIframe() {
-          document.getElementById(this.projectTitle).src = document.getElementById(this.projectTitle).src
-      }
-  }
 }
 </script>
 

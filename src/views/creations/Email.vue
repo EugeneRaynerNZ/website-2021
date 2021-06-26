@@ -18,7 +18,7 @@
                 <div class="creative">
                     <h3>Creative Input</h3>
                     <p v-for="(creative, index) in project.creative" :key="'v-' + index">{{creative}}</p>
-                    <router-link :to="{name: 'Example'}" class="main-button">
+                    <router-link to="email-development/example" class="main-button">
                         <span class="main-button--text">View the email</span> 
                         <span class="main-button--icon">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7.4 12" style="enable-background:new 0 0 7.4 12;" xml:space="preserve">
