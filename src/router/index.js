@@ -4,8 +4,8 @@ import Home from '@/views/Home.vue'
 import Creations from '@/views/Creations.vue'
 import CreationsWebsite from '@/views/creations/Website.vue'
 import CreationsBanner from '@/views/creations/Banner.vue'
+import CreationsEmails from '@/views/creations/Emails.vue'
 import CreationsEmail from '@/views/creations/Email.vue'
-import CreationsEmailExample from '@/views/creations/email-development/Example.vue'
 import Design from '@/views/Design.vue'
 import Code from '@/views/Code.vue'
 import Contact from '@/views/Contact.vue'
@@ -13,16 +13,7 @@ import Contact from '@/views/Contact.vue'
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/creations',
-    name: 'creations',
-    component: Creations,
-  },
+
   {
     path: '/creations/website-development',
     name: 'Website Development',
@@ -34,14 +25,24 @@ const routes = [
     component: CreationsBanner,
   },
   {
-    path: '/creations/email-development',
-    name: 'Email Development',
-    component: CreationsEmail,
+    path: '/creations/email-development/:id',
+    name: 'Email Example',
+    component: CreationsEmail
   },
   {
-    path: '/creations/email-development/example',
-    name: 'Email Example',
-    component: CreationsEmailExample,
+    path: '/creations/email-development',
+    name: 'Email Development',
+    component: CreationsEmails
+  },
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/creations',
+    name: 'creations',
+    component: Creations,
   },
   {
     path: '/design',
@@ -61,6 +62,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  mode: "history",
   routes,
   scrollBehavior() {
     document.getElementById('app').scrollIntoView();

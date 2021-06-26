@@ -1,91 +1,71 @@
 <template>
-    <div class="website">
-    <Header title="Emails" :small-header="true"/>
-    <div class="max-width">
-        <div>
-            <router-link to="/creations" class="breadcrumb-button">
+    
+    <div class="project-email">
+        <Header title="Email work" :small-header="true"/>
+        
+        <div class="max-width">
+            <router-link to="/creations/Email" class="breadcrumb-button">
                 <span class="breadcrumb-button--icon large">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"/></svg>
                 </span>
                 <span class="breadcrumb-button--text">Back to my creations</span> 
-                
             </router-link>
-        </div>
-        <div class="project" v-for="project in projects" :key="'v-' + project.name">
-            <Title :heading="project.name" />
-            <ProjectImage :src="project.imageUrl"/>
-            <div class="content">
-                <div class="creative">
-                    <h3>Creative Input</h3>
-                    <p v-for="(creative, index) in project.creative" :key="'v-' + index">{{creative}}</p>
-                    <router-link to="email-development/example" class="main-button">
-                        <span class="main-button--text">View the email</span> 
-                        <span class="main-button--icon">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7.4 12" style="enable-background:new 0 0 7.4 12;" xml:space="preserve">
-                            <path class="st0" d="M1.4,0L0,1.4L4.6,6L0,10.6L1.4,12l6-6L1.4,0z"/>
-                        </svg>
-                        </span>
-                    </router-link>
+            <Title :heading="title" />
+            <template>
+                <div class="iframe--container">
+                    <iframe id="iframe" @load="load" scrolling="no" :title="title" :src="link" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
                 </div>
-                <div class="built-with">
-                    <h3>Built With</h3>
-                    <div class="tags">
-                        <Tag v-for="tag in project.tags" :key="'v-' + tag" :name="tag"/>
-                    </div>
-                </div>
-            </div>
+            </template>
         </div>
-  </div>
-</div>
+    </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
 import Title from '@/components/Title.vue'
-import ProjectImage from '@/components/ProjectImage.vue'
-import Tag from '@/components/Tag.vue'
-
-import AirNewZealand from '@/assets/project-examples/emails/air-new-zealand.png'
-import Vodafone from '@/assets/project-examples/emails/vodafone.png'
-import Westpac from '@/assets/project-examples/emails/westpac.png'
 
 export default {
-  name: 'Email',
-  components: {Header, Title, ProjectImage, Tag},
-  data() {
+  name: 'Example',
+  components: {Header, Title},
+  props: {
+      id: String,
+  },
+  data(){
       return {
-          projects: [
-            {
-                name: 'Air New Zealand',
-                imageUrl: AirNewZealand,
-                creative: [
-                    'Built for responsiveness and accessibility across many devices, this email is meant to be a sort of travel itenarary.',
-                    'The email has many elements that are interchangable  so that Air New Zealand could manage which email was sent out when.'
-                ],
-                tags: ['HTML5', 'CSS', 'Litmus', 'Email on Acid']
-            },
-            {
-                name: 'Vodafone New Zealand',
-                imageUrl: Vodafone,
-                creative: [
-                    'This email is built to be used within Marketo - an enterprise marketing software.',
-                    'The email has an animated GIF and fallback for those email clients that don’t accept GIF format images.',
-                    'Highly tested using Litmus and Email on Acid across many devices for accessibility.'
-                ],
-                tags: ['HTML5', 'CSS', 'Litmus', 'Email on Acid', 'Marketo']
-            },
-            {
-                name: 'Westpac',
-                imageUrl: Westpac,
-                creative: [
-                    'Westpac is one of New Zealand’s favorite banks.',
-                    'The email was to provide a competition to those customers who were interested in attending the Rugby World Cup.',
-                    'The email is tested using Litmus and Email on Acid.'
-                ],
-                tags: ['HTML5', 'CSS', 'Litmus']
-            }
-          ]
+          link: '',
+          title: ''
       }
+  },
+  methods: {
+    load() {
+        const iFrame = document.getElementById( 'iframe' );
+        iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+    }
+  },
+   mounted(){
+    if(this.$route.params.id === 'air-new-zealand'){
+        this.title = 'Air New Zealand'
+        this.link = '/emails/air-new-zealand/index.html'
+    } else if(this.$route.params.id === 'vodafone'){
+        this.title = 'Vodafone'
+        this.link = '/emails/vodafone/index.html'
+    } else if(this.$route.params.id === 'westpac'){
+        this.title = 'Westpac'
+        this.link = '/emails/westpac/index.html'
+    }
+    
   }
 }
 </script>
+
+<style>
+    #iframe{
+        margin: 0 auto;
+        width: 600px;
+    }
+
+    .iframe--container{
+        display: flex;
+        justify-content: center;
+    }
+</style>

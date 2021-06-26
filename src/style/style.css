@@ -504,6 +504,9 @@ header {
       .tags .tag:nth-child(odd) {
         margin-right: 3px; }
 
+  #iframe {
+    width: 100% !important; }
+
   .footer {
     padding: 20px 0;
     margin-bottom: 60px; } }
