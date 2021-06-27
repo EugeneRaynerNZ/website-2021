@@ -213,7 +213,7 @@ export default {
       gsap.to('#cyan-cog', {x:0, duration: 3})
     }
   }
-} 
+}   
 </script>
 
 <style>
