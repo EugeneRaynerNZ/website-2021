@@ -4,7 +4,7 @@
     
     <div class="max-width">
       <div class="form">
-        <form class="form--container" name="contact" netlify>
+        <form method="POST" class="form--container" name="contact" netlify>
           <div class="form--container-details">
             <label>
               <span>Full Name</span>
