@@ -1,23 +1,23 @@
 <template>
   <div id="contact">
-    <Header title="Like what you see?" subtitle="Let's have a chat :)"/>
+    <Header title="Like what you see?" subtitle="Let's have a chat :)" :small-header="true"/>
     
     <div class="max-width">
       <div class="form">
-        <form class="form--container" netlify>
+        <form class="form--container" name="contact" netlify>
           <div class="form--container-details">
             <label>
               <span>Full Name</span>
-              <input type="text">
+              <input type="text" name="name">
             </label>
             <label>
               <span>Email Address</span>
-              <input type="text">
+              <input type="email" name="email">
             </label>
           </div>
           <label>
             <span>Message</span>
-            <textarea placeholder="Type something nice here"></textarea>
+            <textarea name="message" placeholder="Type something nice here"></textarea>
           </label>
 
           <button type="submit" class="main-button submit">
