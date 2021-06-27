@@ -138,12 +138,15 @@ header {
   margin-top: 15px;
   max-width: 220px;
   cursor: pointer; }
+  .main-button:hover .main-button--icon {
+    margin-left: 10px; }
   .main-button--text {
     color: white;
     padding-right: 10px; }
   .main-button--icon {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    transition: all 1s; }
     .main-button--icon.large svg {
       width: 15px; }
     .main-button--icon svg {

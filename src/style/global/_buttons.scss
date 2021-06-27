@@ -11,6 +11,12 @@
     max-width: 220px;
     cursor: pointer;
 
+    &:hover{
+        .main-button--icon{
+            margin-left: 10px;
+        }
+    }
+
     &--text{
         color: white;
         padding-right: 10px;
@@ -19,6 +25,7 @@
     &--icon{
         display: flex;
         align-items: center;
+        transition: all 1s;
 
         &.large{
             svg{

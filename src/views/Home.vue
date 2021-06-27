@@ -205,15 +205,15 @@ export default {
   methods:{
     hoverIn(){
       gsap.to('.me', {x:200, rotate: 120, duration: 0.2})
-      gsap.to('#cyan-cog', {transformOrigin: '50% 50%', rotate: 360, duration: 5, repeat:-1, ease:"Linear.easeNone"})
-      gsap.to('#large-cog', {transformOrigin: '50% 50%', rotate: -360, duration: 10, repeat:-1, ease:"Linear.easeNone"})
+      gsap.to('#cyan-cog', 2, {transformOrigin: '50% 50%', rotate: 360, repeat:-1, ease:"Linear.easeNone"})
+      gsap.to('#large-cog', 10, {transformOrigin: '50% 50%', rotate: -360, repeat:-1, ease:"Linear.easeNone"})
     },
     hoverOut(){
       gsap.to('.me', {x:0, rotate: 0, duration: 0.2})
       gsap.to('#cyan-cog', {x:0, duration: 3})
     }
   }
-}
+} 
 </script>
 
 <style>
