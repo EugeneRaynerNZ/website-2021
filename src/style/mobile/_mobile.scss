@@ -154,6 +154,11 @@
         width: 100% !important;
     }
 
+    .form--container-details{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
     .footer{
         padding: 20px 0;
         margin-bottom: 60px;

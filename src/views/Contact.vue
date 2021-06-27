@@ -86,7 +86,7 @@ export default {
     max-width: 100%;
     outline: none;
     border-width: 0;
-    background-color: #d5c5ff;
+    background-color: #f8f6ff;
     padding: 10px;
 }
 
@@ -95,7 +95,7 @@ export default {
     max-width: 100%;
     outline: none;
     border-width: 0;
-    background-color: #d5c5ff;
+    background-color: #f8f6ff;
     padding: 10px;
     min-height: 150px;
 }
