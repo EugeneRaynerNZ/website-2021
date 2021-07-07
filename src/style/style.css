@@ -90,17 +90,31 @@ a {
   .nav a {
     color: white;
     margin-right: 30px;
-    display: block; }
+    display: block;
+    position: relative; }
+    .nav a:after {
+      content: '';
+      background: white;
+      height: 2px;
+      width: 0;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transition: all .2s ease-in-out; }
+    .nav a:hover:after {
+      width: 100%; }
 
-.router-link-active:after {
-  content: '';
-  background: white;
-  height: 2px;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  transition: all .2s ease-in-out; }
+.router-link-exact-active {
+  position: relative !important; }
+  .router-link-exact-active:after {
+    content: '' !important;
+    background: white !important;
+    height: 2px !important;
+    width: 100% !important;
+    position: absolute !important;
+    left: 0 !important;
+    bottom: -5px !important;
+    transition: all .2s ease-in-out !important; }
 
 header {
   text-align: left;
