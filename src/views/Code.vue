@@ -3,7 +3,7 @@
     <Header title="I code things on Codepen" subtitle="Let's create something fun" :small-header="true"/>
     
     <main class="max-width">
-      <Intro :textArray="introduction"/>
+      <Intro :textArray="introduction" :button="introButton"/>
       <div class="project" v-for="project in projects" :key="'v-' + project.title">
           <Title :heading="project.title" />
           <Codepen :embedUrl="project.embedUrl" :projectTitle="project.projectTitle" :projectLink="project.button.link"/>
@@ -56,6 +56,10 @@ export default {
           "I've always been really into creating cool, whacky code snippets. I love creating cool animated / interactive codepens for viewing pleasure.",
           "Below are some of my favorite code snippets I have created."
         ],
+        introButton: {
+          text: 'Check out my Codepen',
+          link: 'https://codepen.io/erayner'
+        },
         projects: [
           {
           title: 'Pure CSS 3d ball bounce',
@@ -72,20 +76,20 @@ export default {
           },
           tags: ['HTML5', 'SCSS']
         },
-        {
-          title: 'Pure CSS 3d Elephant',
-          embedUrl: "https://codepen.io/erayner/embed/MWpBrBq?height=330&theme-id=light&default-tab=css,result",
-          projectTitle: "Elephant",
-          creative: [
-            'hello',
-            'test'
-          ],
-          button: {
-            link: 'https://codepen.io/erayner/pen/MWpBrBq',
-            text: 'View on Codepen'
-          },
-          tags: ['HTML5', 'SCSS']
-        }
+        // {
+        //   title: 'Pure CSS 3d Elephant',
+        //   embedUrl: "https://codepen.io/erayner/embed/MWpBrBq?height=330&theme-id=light&default-tab=css,result",
+        //   projectTitle: "Elephant",
+        //   creative: [
+        //     'hello',
+        //     'test'
+        //   ],
+        //   button: {
+        //     link: 'https://codepen.io/erayner/pen/MWpBrBq',
+        //     text: 'View on Codepen'
+        //   },
+        //   tags: ['HTML5', 'SCSS']
+        // }
         ]
       }
   },

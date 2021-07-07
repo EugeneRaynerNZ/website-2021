@@ -3,6 +3,7 @@
     <Header title="Like what you see?" subtitle="Let's have a chat :)" :small-header="true"/>
     
     <div class="max-width">
+      <Title :heading="'Contact me'"/>
       <div class="form">
         <form method="POST" class="form--container" name="contact" netlify>
           <div class="form--container-details">
@@ -37,6 +38,7 @@
 
 <script>
 import Header from '@/components/Header.vue'
+import Title from '@/components/Title.vue'
 
 export default {
   name: 'Contact',
@@ -44,7 +46,8 @@ export default {
       return {}
   },
   components: {
-    Header
+    Header,
+    Title
   }
 }
 </script>
@@ -101,11 +104,23 @@ export default {
 }
 
 .submit{
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
     outline: none;
     border-width: 0;
     background-color: #ff4b33;
     color: white;
     align-self: flex-start;
+    min-width: 220px;
     
 }
 </style>

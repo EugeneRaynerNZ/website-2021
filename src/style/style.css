@@ -146,7 +146,7 @@ header {
   .main-button--icon {
     display: flex;
     align-items: center;
-    transition: all 1s; }
+    transition: all 0.3s; }
     .main-button--icon.large svg {
       width: 15px; }
     .main-button--icon svg {
@@ -171,6 +171,23 @@ header {
 
 .inline-link {
   font-weight: 500; }
+
+.link-hover--line {
+  position: relative; }
+  .link-hover--line:after {
+    content: '';
+    background: white;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all .2s ease-in-out; }
+  .link-hover--line.line-primary:after {
+    background: #6533ff;
+    bottom: -3px; }
+  .link-hover--line:hover:after {
+    width: 100%; }
 
 .title {
   text-align: center;
@@ -202,7 +219,10 @@ header {
       .footer .social-links a svg {
         width: 100%; }
       .footer .social-links a .st0 {
-        fill: #6533ff; }
+        fill: #6533ff;
+        transition: all .3s ease-in-out; }
+      .footer .social-links a:hover .st0 {
+        fill: #ff4b33; }
   .footer p {
     color: #6533ff;
     margin-top: 5px; }
@@ -220,7 +240,8 @@ header {
       font-size: 18px;
       margin-bottom: 8px; }
   .image-text-block--image {
-    flex: 1; }
+    flex: 1;
+    min-height: 200px; }
 
 .paragraph-image-block {
   display: flex;
@@ -441,6 +462,9 @@ header {
     header h2 {
       font-size: 22px;
       font-weight: 300; }
+
+  .intro {
+    margin-bottom: 30px; }
 
   .title {
     max-width: 400px;

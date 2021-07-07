@@ -8,9 +8,19 @@
             
             svg{
                 width: 100%;
+                
             }
 
-            .st0{fill:$primary;}
+            .st0{
+                fill:$primary;
+                transition: all .3s ease-in-out;
+            }
+
+            &:hover{
+                .st0{
+                    fill:$secondary;
+                }
+            }
         }
     }
 

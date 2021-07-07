@@ -3,11 +3,11 @@
 
     <nav class="nav">
       <div class="nav--container max-width">
-        <router-link to="/">Home</router-link>
-        <router-link to="/creations">Creations</router-link>
-        <router-link to="/code">Code</router-link>
-        <router-link to="/design">Design</router-link>
-        <router-link to="/contact">Contact</router-link>
+        <router-link class="link-hover--line" to="/">Home</router-link>
+        <router-link class="link-hover--line" to="/creations">Creations</router-link>
+        <router-link class="link-hover--line" to="/code">Code</router-link>
+        <router-link class="link-hover--line" to="/design">Design</router-link>
+        <router-link class="link-hover--line" to="/contact">Contact</router-link>
       </div>
     </nav>
 
