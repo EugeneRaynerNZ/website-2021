@@ -9,6 +9,7 @@ import CreationsEmail from '@/views/creations/Email.vue'
 import Design from '@/views/Design.vue'
 import Code from '@/views/Code.vue'
 import Contact from '@/views/Contact.vue'
+import NotFound from '@/views/404.vue'
 
 Vue.use(VueRouter)
 
@@ -59,6 +60,8 @@ const routes = [
     name: 'Contact',
     component: Contact
   },
+  { path: '/404', component: NotFound },  
+  { path: '*', redirect: '/404' },   
 ]
 
 const router = new VueRouter({
