@@ -20,6 +20,10 @@
 
 <script>
 import Icon from '@/components/Icon'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default {
   name: 'Paragraph',
@@ -33,6 +37,21 @@ export default {
       reverse: Boolean,
       link: String,
       linkText: String,
-  }
+  },
+  methods: {
+    scrollAnimation() {
+      gsap.to("h3", { opacity: 1, duration: 2, scrollTrigger: ".paragraph-image-block"})
+      gsap.to("p", { opacity: 1, duration: 2, scrollTrigger: ".paragraph-image-block"})
+    }
+  },
+  mounted() {
+    this.scrollAnimation();
+  },
 }
 </script>
+
+<style>
+  .paragraph-image-block h3, .paragraph-image-block p{
+    opacity: 0;
+  }
+</style>

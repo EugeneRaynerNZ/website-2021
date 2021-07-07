@@ -11,6 +11,10 @@ module.exports = {
           path.resolve(__dirname, 'dist'),
           // List of routes to prerender
           [ '/'],
+          [ '/creations'],
+          [ '/code'],
+          [ '/design'],
+          [ '/contact'],
           {
             // options
           }

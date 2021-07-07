@@ -10,6 +10,7 @@ import Design from '@/views/Design.vue'
 import Code from '@/views/Code.vue'
 import Contact from '@/views/Contact.vue'
 import NotFound from '@/views/404.vue'
+import SubmissionSuccess from '@/views/SubmissionSuccess'
 
 Vue.use(VueRouter)
 
@@ -61,7 +62,12 @@ const routes = [
     component: Contact
   },
   { path: '/404', component: NotFound },  
-  { path: '*', redirect: '/404' },   
+  { path: '*', redirect: '/404' },
+  {
+    path: '/thanks',
+    name: 'success',
+    component: SubmissionSuccess
+  },
 ]
 
 const router = new VueRouter({

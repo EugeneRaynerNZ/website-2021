@@ -1,6 +1,6 @@
 <template>
   <div id="contact">
-    <Header title="Oops! You seem to be lost :)" :small-header="true"/>
+    <Header title="Thanks for contacting me!" subtitle="I will message you back asap!" :small-header="true"/>
     <div class="max-width">
         <router-link :to="button.link" class="main-button">
             <span class="main-button--text">{{button.text}}</span> 
@@ -18,7 +18,7 @@
 import Header from '@/components/Header.vue'
 
 export default {
-  name: '404',
+  name: 'SubmissionSuccess',
   data() {
       return {
           button:{
