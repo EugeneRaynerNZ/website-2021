@@ -5,7 +5,8 @@
     <div class="max-width">
       <Title :heading="'Contact me'"/>
       <div class="form">
-        <form method="POST" class="form--container" name="contact" netlify>
+        <form method="POST" class="form--container" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="ask-question" />
           <div class="form--container-details">
             <label>
               <span>Full Name</span>
