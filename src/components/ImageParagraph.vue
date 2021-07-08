@@ -1,7 +1,7 @@
 <template>
-  <div class="paragraph-image-block" :class="reverse ? 'reverse' : ''">
+  <div class="paragraph-image-block" ref="block" :class="reverse ? 'reverse' : ''">
      <div class="paragraph-image-block--text">
-        <h3>{{title}}</h3>
+        <h3 ref="blockTitle">{{title}}</h3>
         <p v-for="(paragraph, index) in paragraphs" :key="'paragraph-' + index" v-html="paragraph"></p>
         <template v-if="link">
           <router-link :to="link" class="main-button">
@@ -38,14 +38,17 @@ export default {
       link: String,
       linkText: String,
   },
-  methods: {
-    scrollAnimation() {
-      gsap.to("h3", { opacity: 1, duration: 2, scrollTrigger: ".paragraph-image-block"})
-      gsap.to("p", { opacity: 1, duration: 2, scrollTrigger: ".paragraph-image-block"})
-    }
-  },
   mounted() {
-    this.scrollAnimation();
+    const { block } = this.$refs.block
+    const q = gsap.utils.selector(block)
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: block,
+        start: "top top",
+        markers: true
+      },
+    })
+    .to(q, { opacity: 1, duration: 2 })
   },
 }
 </script>
