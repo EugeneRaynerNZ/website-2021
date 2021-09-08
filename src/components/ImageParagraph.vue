@@ -39,22 +39,30 @@ export default {
       linkText: String,
   },
   mounted() {
-    const { block } = this.$refs.block
-    const q = gsap.utils.selector(block)
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: block,
-        start: "top top",
-        markers: true
-      },
-    })
-    .to(q, { opacity: 1, duration: 2 })
+    // fix was to get the block ref and then get it's elements
+      const { block } = this.$refs
+      
+      //element
+      const whole = block.getElementsByClassName("paragraph-image-block--text")
+      const h3 = block.getElementsByTagName("h3")
+      const p = block.getElementsByTagName("p")
+      const link = block.getElementsByTagName("a")
+
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: whole,
+          // start: "top top",
+          // markers: true
+        },
+      })
+      // multiple elements
+      .set([...h3, ...p, ...link], {y: 20, opacity: 0})
+      // single elements
+      .to(h3, { opacity:1, y: 0, duration: 0.6 })
+      .to(p, { opacity:1, y: 0, duration: 0.6 })
+      .to(link, { opacity:1, y: 0, duration: 0.6 })
+
+      // .to([...block.getElementsByTagName('p'), ...block.getElementsByTagName('h3')], { opacity: 1, duration: 2 })
   },
 }
 </script>
-
-<style>
-  .paragraph-image-block h3, .paragraph-image-block p{
-    opacity: 0;
-  }
-</style>

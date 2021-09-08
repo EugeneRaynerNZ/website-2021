@@ -311,9 +311,9 @@
         </section>
 
         <Title :heading="'What do I do?'"/>
-        <ImageParagraph :title="creator.title" :paragraphs="creator.text" image="creator" :linkText="creator.button.text" :link="creator.button.link"/>
-        <ImageParagraph :title="code.title" :paragraphs="code.text" image="octocat" :reverse="true" :linkText="code.button.text" :link="code.button.link"/>
-        <ImageParagraph :title="design.title" :paragraphs="design.text" image="illustrator" :linkText="design.button.text" :link="design.button.link"/>
+        <ImageParagraph id="p1" :title="creator.title" :paragraphs="creator.text" image="creator" :linkText="creator.button.text" :link="creator.button.link"/>
+        <ImageParagraph id="p2" :title="code.title" :paragraphs="code.text" image="octocat" :reverse="true" :linkText="code.button.text" :link="code.button.link"/>
+        <ImageParagraph id="p3" :title="design.title" :paragraphs="design.text" image="illustrator" :linkText="design.button.text" :link="design.button.link"/>
         <!-- <ImageParagraph :title="blog.title" :paragraphs="blog.text"/> -->
       </main>
     </div>
