@@ -11,25 +11,9 @@
               <h3>What I am about</h3>
               <p v-for="(paragraph, index) in aboutContent" :key="'content-' + index">{{paragraph}}</p>
           </div>
-          <div @mouseenter="hoverIn" @mouseleave="hoverOut" class="image-text-block--image" style="position: relative;">
+          <!-- <div @mouseenter="hoverIn" @mouseleave="hoverOut" class="image-text-block--image" style="position: relative;"> -->
+            <div class="image-text-block--image">
             <div class="me2">
-              <svg id="cogs" width="200" height="200">
-
-                <g class="small">
-                  <circle cx="50" cy="50" r="20"/>
-                  <path class="path" d="M 40 60 L 80 60"/>
-                </g>
-                <g class="medium">
-                  <circle cx="100" cy="100" r="37"/>
-                  <path class="path" d="M 63 100 L 137 100"/>
-                </g>
-                <g class="small">
-                  <circle cx="60" cy="60" r="20"/>
-                  <path class="path" d="M 40 60 L 80 60"/>
-                </g>
-
-              </svg>
-
               <svg version="1.1" id="me" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 982.4 982.3" style="enable-background:new 0 0 982.4 982.3;" xml:space="preserve">
               <g id="_x31_4">
@@ -433,7 +417,7 @@ export default {
   }
 
   #me{
-    position: absolute;
+    /* position: absolute; */
     
     z-index: 3;
     width: 200px;
@@ -456,28 +440,14 @@ export default {
   
   .me2{
     min-height:200px;
-    width: 99%;
-    height: 99%;
+    /* width: 99%;
+    height: 99%; */
     position: absolute;
     z-index: 2;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  #cogs{
-    margin:20px;
-    overflow:visible;
-    cursor:pointer;
-  }
-  #cogs .big, #cogs .medium circle, #cogs .small circle{
-    fill:green;
-  }
-
-  #cogs path{
-    stroke:#235d23;
-    stroke-width:3;
   }
 
 </style>
