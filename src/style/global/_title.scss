@@ -1,24 +1,24 @@
 .title{
-    text-align: center;
+    text-align: left;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
     span{
         background: white;
         z-index: 2;
         font-size: 30px;
         position: relative;
-        padding: 0 10px;
-    }
+        // padding: 0 10px;
+    } 
 
-    &:before{
-        content: '';
-        position: absolute;
-        z-index: 1;
-        top: 50%;
-        left: 0;
-        height: 1px;
-        background: $primary;
-        width: 100%;
-    }
+    // &:before{
+    //     content: '';
+    //     position: absolute;
+    //     z-index: 1;
+    //     top: 50%;
+    //     left: 0;
+    //     height: 1px;
+    //     background: $primary;
+    //     width: 100%;
+    // }
 }

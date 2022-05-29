@@ -1,7 +1,7 @@
 <template>
     <div id="home">
       <!-- logo n stuff goes here -->
-      <Header title="Lover of all things Digital" subtitle="Interactive Developer, Designer &amp; Creator"/>
+      <Header title="Lover of all things Digital" subtitle="UX/UI Designer &amp; Front End Developer"/>
       
       <main class="max-width">
         <Title :heading="'Hey! Nice to meet you. My name\'s Eugene'"/>
@@ -297,7 +297,7 @@
         <Title :heading="'What do I do?'"/>
         <ImageParagraph id="p1" :title="creator.title" :paragraphs="creator.text" image="creator" :linkText="creator.button.text" :link="creator.button.link"/>
         <ImageParagraph id="p2" :title="code.title" :paragraphs="code.text" image="octocat" :reverse="true" :linkText="code.button.text" :link="code.button.link"/>
-        <ImageParagraph id="p3" :title="design.title" :paragraphs="design.text" image="illustrator" :linkText="design.button.text" :link="design.button.link"/>
+        <!-- <ImageParagraph id="p3" :title="design.title" :paragraphs="design.text" image="illustrator" :linkText="design.button.text" :link="design.button.link"/> -->
         <!-- <ImageParagraph :title="blog.title" :paragraphs="blog.text"/> -->
       </main>
     </div>
@@ -323,8 +323,8 @@ export default {
       return {
           aboutContent: [
               "Interactive Developer, Designer and most of all, a creator.",
-              "I love all things digital. Websites, apps, blockchains, you name it, I know about it, and i’ve probably done it too.",
-              "I’ve got 6 years experience in designing and developing frontend projects. I love interactive experiences, those places where you show your friends, and keep coming back for me to enjoy the experience."
+              "I love all things digital. Websites, apps, blockchains, you name it, I know about it, and i've probably done it too.",
+              "I've got 7 years experience in designing and developing frontend projects. I love creating interactive experiences and interfaces that make you want to come back for more."
           ],
           creator: {
             title: 'First and Foremost I am a Creator',
@@ -448,6 +448,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  #p1{
+    padding-top: 20px;
   }
 
 </style>

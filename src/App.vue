@@ -6,7 +6,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/creations">Creations</router-link>
         <router-link to="/code">Code</router-link>
-        <router-link to="/design">Design</router-link>
+        <!-- <router-link to="/design">Design</router-link> -->
         <router-link to="/contact">Contact</router-link>
       </div>
     </nav>
@@ -25,7 +25,7 @@
             </g>
             </svg>
           </a>
-          <a target="_blank" href="https://dribbble.com/eugene_rayner">
+          <!-- <a target="_blank" href="https://dribbble.com/eugene_rayner">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
               <g>
                 <g>
@@ -46,7 +46,7 @@
                 </g>
               </g>
             </svg>
-          </a>
+          </a> -->
           <a target="_blank" href="https://github.com/EugeneRaynerNZ">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
               <path class="st0" d="M17.5,1C7.9,1,0.2,8.7,0.2,18.3c0,7.6,4.9,14.1,11.8,16.4c0.9,0.2,1.2-0.4,1.2-0.8c0-0.4,0-1.5,0-2.9
@@ -74,7 +74,7 @@
             </svg>
           </a>
         </div>
-        <p>Eugene Rayner &copy; 2021</p>
+        <p>Eugene Rayner &copy; 2022</p>
       </div>
     </footer>
   </div>

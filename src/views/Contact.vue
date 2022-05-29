@@ -55,7 +55,8 @@ export default {
 
 <style>
 .form {
-  box-shadow: 0px 0px 2px 3px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px 10px rgba(101, 51, 255, 0.05);
+  border-radius: 4px;
 }
 
 .form--container{

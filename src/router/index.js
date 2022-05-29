@@ -6,7 +6,7 @@ import CreationsWebsite from '@/views/creations/Website.vue'
 import CreationsBanner from '@/views/creations/Banner.vue'
 import CreationsEmails from '@/views/creations/Emails.vue'
 import CreationsEmail from '@/views/creations/Email.vue'
-import Design from '@/views/Design.vue'
+// import Design from '@/views/Design.vue'
 import Code from '@/views/Code.vue'
 import Contact from '@/views/Contact.vue'
 import NotFound from '@/views/404.vue'
@@ -46,11 +46,11 @@ const routes = [
     name: 'creations',
     component: Creations,
   },
-  {
-    path: '/design',
-    name: 'Designs',
-    component: Design
-  },
+  // {
+  //   path: '/design',
+  //   name: 'Designs',
+  //   component: Design
+  // },
   {
     path: '/code',
     name: 'Code',
