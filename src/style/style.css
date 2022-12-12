@@ -92,29 +92,28 @@ a {
 }
 
 .nav {
-  background: #6533ff;
-  position: fixed;
-  z-index: 1000;
   width: 100%;
+  padding: 32px 0;
 }
 .nav--container {
   display: flex;
-  align-items: center;
-  height: 72px;
+  justify-content: space-between;
 }
 .nav--container.max-width {
   padding-top: 0;
   padding-bottom: 0;
 }
-.nav a {
-  color: white;
+.nav--container .right {
+  display: flex;
+}
+.nav .nav--link {
   margin-right: 30px;
   display: block;
   position: relative;
 }
-.nav a:after {
+.nav .nav--link:after {
   content: "";
-  background: white;
+  background: black;
   height: 2px;
   width: 0;
   position: absolute;
@@ -122,8 +121,20 @@ a {
   bottom: -5px;
   transition: all 0.2s ease-in-out;
 }
-.nav a:hover:after {
+.nav .nav--link:hover:after {
   width: 100%;
+}
+.nav .nav--link:active {
+  color: black;
+}
+.nav .nav--link:visited {
+  color: black;
+}
+.nav #logo-words:visited {
+  color: black;
+}
+.nav #logo-words:active {
+  color: black;
 }
 
 .router-link-exact-active {
@@ -131,7 +142,7 @@ a {
 }
 .router-link-exact-active:after {
   content: "" !important;
-  background: white !important;
+  background: black !important;
   height: 2px !important;
   width: 100% !important;
   position: absolute !important;
@@ -143,10 +154,8 @@ a {
 header {
   text-align: left;
   padding: 192px 0 120px 0;
-  background: #6533ff;
   position: relative;
   margin-bottom: 150px;
-  color: white;
 }
 header.small-header {
   padding: 132px 0 60px 0;

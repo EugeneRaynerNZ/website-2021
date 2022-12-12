@@ -3,11 +3,12 @@
 
     <nav class="nav">
       <div class="nav--container max-width">
-        <router-link to="/">Home</router-link>
-        <router-link to="/creations">Creations</router-link>
-        <router-link to="/code">Code</router-link>
-        <!-- <router-link to="/design">Design</router-link> -->
-        <router-link to="/contact">Contact</router-link>
+        <div class="left"><a href="/" id="logo-words">EUGENE RAYNER</a></div>
+        <div class="right">
+          <router-link class="nav--link" to="/">Home</router-link>
+          <router-link class="nav--link" to="/play">Play</router-link>
+          <router-link class="nav--link" to="/contact">Contact</router-link>
+        </div>
       </div>
     </nav>
 

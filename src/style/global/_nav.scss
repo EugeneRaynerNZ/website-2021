@@ -1,29 +1,34 @@
 .nav{
-    background: $header;
-    position: fixed;
-    z-index: 1000;
+    // background: $header;
+    // position: fixed;
+    // z-index: 1000;
     width: 100%;
+    padding: 32px 0;
 
     &--container{
         display: flex;
-        align-items: center;
-        height: 72px;
+        justify-content: space-between;
+        
 
         &.max-width{
             padding-top: 0;
             padding-bottom: 0;
         }
+
+        .right{
+            display: flex;
+        }
     }
 
-    a{
-        color: white;
+    .nav--link{
+        // color: white;
         margin-right: 30px;
         display: block;
         position: relative;
 
         &:after{
             content: '';
-            background: white;
+            background: black;
             height: 2px; 
             width: 0;
             position: absolute;
@@ -37,6 +42,25 @@
                 width: 100%;
             } 
         }
+
+        &:active{
+            color: black;
+        }
+
+        &:visited{
+            color: black;
+        }
+    }
+
+    #logo-words{
+
+        &:visited{
+            color: black;
+        }
+
+        &:active{
+            color: black;
+        }
     }
 }
 
@@ -45,7 +69,7 @@
 
     &:after{
         content: '' !important;
-        background: white !important;
+        background: black !important;
         height: 2px !important; 
         width: 100% !important;
         position: absolute !important;
