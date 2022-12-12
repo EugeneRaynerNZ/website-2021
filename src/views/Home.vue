@@ -4,19 +4,19 @@
     <div>
       <header class="max-width">
         <Title :heading="'Hey! Nice to meet you. My name\'s Eugene'" />
-        <h3>UX Designer, Javascript Nerd and Musician</h3>
+        <h2>I'm a UX Designer, Javascript Nerd &amp; Musician</h2>
+        <p>I'm a product designer based in Auckland, New Zealand with experience in delivering end-to-end UX/UI design for software products. I'm passionate about improving the lives of others through design and am constantly looking to learn new things everyday.</p>
       </header>
     </div>
 
     <main class="max-width">
       <!-- Projects -->
+      <h3>MY RECENT WORK</h3>
       <Project 
         v-for="(project, index) in projects"
         :key="'project-' + index"
-        :name="project.name" 
         :img="project.img" 
-        :color="project.color" 
-        :link="project.link"
+        :link="project.link" 
       />
     </main>
   </div>
@@ -27,6 +27,7 @@
 import Title from "@/components/Title.vue";
 import Project from "@/components/Project.vue";
 import Me from "@/assets/me.svg";
+import Velocity from "@/assets/velocity.png";
 
 export default {
   name: "Home",
@@ -39,21 +40,15 @@ export default {
       me: Me,
       projects: [
         {
-          name: 'Velocity UX Design', 
-          img: Me, 
-          color: 'red',
+          img: Velocity, 
           link: 'velocity'
         },
         {
-          name: 'Project', 
-          img: Me, 
-          color: 'blue',
+          img: Velocity, 
           link: 'project'
         },
         {
-          name: 'Point of Sale Forecasting', 
-          img: Me, 
-          color: 'yellow',
+          img: Velocity, 
           link: 'pos-forecasting'
         }
       ]

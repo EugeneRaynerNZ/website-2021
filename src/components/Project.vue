@@ -1,9 +1,6 @@
 <template>
   <router-link :to="link">
-    <div class="project--container" :style="{ backgroundColor: this.color }">
       <img :src="img" />
-      <p>{{ name }}</p>
-    </div>
   </router-link>
 </template>
 
@@ -11,10 +8,8 @@
 export default {
   name: "Project",
   props: {
-    name: String,
     img: String,
-    color: String,
-    link: String
+    link: String,
   },
 };
 </script>
@@ -22,7 +17,7 @@ export default {
 <style>
 .project--container {
   width: 100%;
-  height: 200px;
+  height: 300px;
   margin-bottom: 60px;
   display: flex;
   padding: 16px;
