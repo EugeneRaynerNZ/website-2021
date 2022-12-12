@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="link">
+  <router-link class="project--container" :to="link">
       <img :src="img" />
   </router-link>
 </template>
@@ -17,14 +17,18 @@ export default {
 <style>
 .project--container {
   width: 100%;
-  height: 300px;
   margin-bottom: 60px;
   display: flex;
-  padding: 16px;
   align-items: center;
+  transition: all 0.4s;
+}
+
+.project--container:hover{
+    transform: scale(1.0065);
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.35);
 }
 
 .project--container img{
-    max-height: 100%;
+    max-width: 100%;
 }
 </style>

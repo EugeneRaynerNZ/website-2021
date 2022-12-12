@@ -1,29 +1,46 @@
 <template>
   <div id="app">
-
     <nav class="nav">
-      <div class="nav--container max-width">
-        <div class="left"><a href="/" id="logo-words">EUGENE RAYNER</a></div>
-        <div class="right">
-          <router-link class="nav--link" to="/">Home</router-link>
-          <router-link class="nav--link" to="/play">Play</router-link>
-          <router-link class="nav--link" to="/contact">Contact</router-link>
+      <div class="max-width">
+        <div class="nav--container">
+          <div class="left"><a href="/" id="logo-words">EUGENE RAYNER</a></div>
+          <div class="right">
+            <router-link class="nav--link" to="/">Home</router-link>
+            <router-link class="nav--link" to="/play">Play</router-link>
+            <router-link class="nav--link" to="/contact">Contact</router-link>
+          </div>
         </div>
       </div>
     </nav>
 
-    <router-view/>
+    <router-view />
 
-    <footer class="footer"> 
+    <footer class="footer">
       <div class="footer--container max-width">
         <div class="social-links">
-          <a target="_blank" href="https://www.linkedin.com/in/eugene-r-63509310a/">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
-            <g>
-              <path class="st0" d="M1.7,12.4h6.8v21.8H1.7V12.4z M5.1,1.6C7.2,1.6,9,3.3,9,5.5c0,2.2-1.8,3.9-3.9,3.9c-2.2,0-3.9-1.8-3.9-3.9
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/eugene-r-63509310a/"
+          >
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 35 35"
+              style="enable-background: new 0 0 35 35"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M1.7,12.4h6.8v21.8H1.7V12.4z M5.1,1.6C7.2,1.6,9,3.3,9,5.5c0,2.2-1.8,3.9-3.9,3.9c-2.2,0-3.9-1.8-3.9-3.9
                 C1.1,3.3,2.9,1.6,5.1,1.6 M12.7,34.2h6.8V23.4c0-2.8,0.5-5.6,4.1-5.6c3.5,0,3.5,3.2,3.5,5.8v10.6h6.8V22.2c0-5.9-1.3-10.4-8.1-10.4
-                c-3.3,0-5.5,1.8-6.4,3.5h-0.1v-3h-6.5V34.2z"/>
-            </g>
+                c-3.3,0-5.5,1.8-6.4,3.5h-0.1v-3h-6.5V34.2z"
+                />
+              </g>
             </svg>
           </a>
           <!-- <a target="_blank" href="https://dribbble.com/eugene_rayner">
@@ -49,18 +66,43 @@
             </svg>
           </a> -->
           <a target="_blank" href="https://github.com/EugeneRaynerNZ">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
-              <path class="st0" d="M17.5,1C7.9,1,0.2,8.7,0.2,18.3c0,7.6,4.9,14.1,11.8,16.4c0.9,0.2,1.2-0.4,1.2-0.8c0-0.4,0-1.5,0-2.9
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 35 35"
+              style="enable-background: new 0 0 35 35"
+              xml:space="preserve"
+            >
+              <path
+                class="st0"
+                d="M17.5,1C7.9,1,0.2,8.7,0.2,18.3c0,7.6,4.9,14.1,11.8,16.4c0.9,0.2,1.2-0.4,1.2-0.8c0-0.4,0-1.5,0-2.9
                 c-4.8,1-5.8-2.3-5.8-2.3c-0.8-2-1.9-2.5-1.9-2.5c-1.6-1.1,0.1-1,0.1-1c1.7,0.1,2.6,1.8,2.6,1.8c1.5,2.6,4,1.9,5,1.4
                 c0.2-1.1,0.6-1.9,1.1-2.3c-3.8-0.4-7.9-1.9-7.9-8.5c0-1.9,0.7-3.4,1.8-4.6C8,12.3,7.5,10.5,8.4,8.2c0,0,1.4-0.5,4.7,1.8
                 c1.4-0.4,2.8-0.6,4.3-0.6c1.5,0,2.9,0.2,4.3,0.6c3.3-2.2,4.7-1.8,4.7-1.8c0.9,2.4,0.3,4.1,0.2,4.6c1.1,1.2,1.8,2.7,1.8,4.6
                 c0,6.6-4,8.1-7.9,8.5c0.6,0.5,1.2,1.6,1.2,3.2c0,2.3,0,4.2,0,4.7c0,0.5,0.3,1,1.2,0.8c6.9-2.3,11.8-8.7,11.8-16.3
-                C34.7,8.7,27,1,17.5,1"/>
+                C34.7,8.7,27,1,17.5,1"
+              />
             </svg>
           </a>
           <a target="_blank" href="https://codepen.io/erayner">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
-              <path class="st0" d="M34.4,12.6C34.4,12.6,34.4,12.5,34.4,12.6c0-0.1,0-0.1,0-0.2c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1c0,0,0,0,0-0.1
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 35 35"
+              style="enable-background: new 0 0 35 35"
+              xml:space="preserve"
+            >
+              <path
+                class="st0"
+                d="M34.4,12.6C34.4,12.6,34.4,12.5,34.4,12.6c0-0.1,0-0.1,0-0.2c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1c0,0,0,0,0-0.1
                 c0,0,0-0.1,0-0.1c0,0,0,0,0-0.1c0,0,0-0.1-0.1-0.1c0,0,0,0,0-0.1c0,0,0-0.1-0.1-0.1c0,0,0,0-0.1-0.1c0,0-0.1,0-0.1-0.1
                 c0,0,0,0-0.1,0c0,0,0,0,0,0L18.3,1.2c-0.5-0.3-1.1-0.3-1.6,0L1.2,11.6c0,0,0,0,0,0c0,0,0,0-0.1,0c0,0-0.1,0-0.1,0.1c0,0,0,0-0.1,0.1
                 c0,0,0,0.1-0.1,0.1c0,0,0,0-0.1,0.1c0,0,0,0.1-0.1,0.1c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1
@@ -71,7 +113,8 @@
                 c0,0,0-0.1,0-0.1c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1c0,0,0,0,0-0.1c0-0.1,0-0.1,0-0.2V12.8
                 C34.4,12.7,34.4,12.6,34.4,12.6z M18.9,5.2l11.4,7.6l-5.1,3.4L18.9,12L18.9,5.2L18.9,5.2z M16,5.2V12l-6.3,4.2l-5.1-3.4L16,5.2z
                 M3.4,15.5l3.6,2.4l-3.6,2.4V15.5z M16,30.7L4.6,23.1l5.1-3.4l6.3,4.2C16,23.9,16,30.7,16,30.7z M17.5,21.4l-5.1-3.4l5.1-3.4
-                l5.1,3.4L17.5,21.4z M18.9,30.7v-6.8l6.3-4.2l5.1,3.4L18.9,30.7z M31.5,20.4l-3.6-2.4l3.6-2.4V20.4z"/>
+                l5.1,3.4L17.5,21.4z M18.9,30.7v-6.8l6.3-4.2l5.1,3.4L18.9,30.7z M31.5,20.4l-3.6-2.4l3.6-2.4V20.4z"
+              />
             </svg>
           </a>
         </div>
