@@ -11,3 +11,38 @@
 
 // mobile
 @import 'mobile/main';
+
+ul{
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li{
+    list-style-type: disc;
+    font-weight: 200;
+}
+
+section h1{
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+
+section.mainSection h1{
+    font-size: 40px;
+}
+
+section h2{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+p, li{
+    line-height: 1.75;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 16px;
+}
