@@ -314,7 +314,7 @@ header h2 {
 }
 
 .footer {
-  padding: 100px 0 50px 0;
+  padding: 80px 0 50px 0;
 }
 .footer .social-links {
   display: flex;
@@ -576,6 +576,8 @@ header h2 {
   .max-width {
     padding-bottom: 0;
     padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   header {
@@ -616,6 +618,9 @@ header h2 {
 
   #home .nav #logo-words {
     font-size: 3vw;
+  }
+  #home main {
+    margin-top: 40px;
   }
 
   #project .projectHeader img {
