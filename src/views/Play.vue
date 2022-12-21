@@ -14,11 +14,11 @@
     <main>
       <section class="max-width">
         <h1>Music is in my Blood.</h1>
-        <p>
+        <!-- <p>
           I come from a highly creative family. My father is Eddie Rayner,
           Keyboardist from the iconic New Zealand band, Split Enz. My mother is
           a scensory artist. Her name is Raewyn Turner.
-        </p>
+        </p> -->
         <p>
           I am a music producer at heart, although recently I have been
           focussing on my career.

@@ -1,7 +1,5 @@
 <template>
   <div id="contact">
-    <Header title="Like what you see?" subtitle="Let's have a chat :)" :small-header="true"/>
-    
     <div class="max-width">
       <Title :heading="'Contact me'"/>
       <div class="form">
@@ -38,7 +36,6 @@
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
 import Title from '@/components/Title.vue'
 
 export default {
@@ -47,82 +44,7 @@ export default {
       return {}
   },
   components: {
-    Header,
     Title
   }
 }
 </script>
-
-<style>
-.form {
-  box-shadow: 0px 0px 10px 10px rgba(101, 51, 255, 0.05);
-  border-radius: 4px;
-}
-
-.form--container{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.form--container-details{
-    display: flex;
-    justify-content: space-between;
-}
-
-.form--container label{
-    margin: 0 0 20px 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 49%
-}
-
-.form--container label span{
-    display: block;
-    padding-bottom: 10px;
-}
-
-.form--container label input{
-    
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    outline: none;
-    border-width: 0;
-    background-color: #f8f6ff;
-    padding: 10px;
-}
-
-.form--container label textarea{
-    width: auto !important;
-    max-width: 100%;
-    outline: none;
-    border-width: 0;
-    background-color: #f8f6ff;
-    padding: 10px;
-    min-height: 150px;
-}
-
-.submit{
-    border: none;
-    margin: 0;
-    text-decoration: none;
-    background: #0069ed;
-    color: #ffffff;
-    font-family: sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-
-    outline: none;
-    border-width: 0;
-    background-color: #ff4b33;
-    color: white;
-    align-self: flex-start;
-    min-width: 220px;
-    
-}
-</style>

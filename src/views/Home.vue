@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <!-- logo n stuff goes here -->
-    <header class="max-width">
+    <header class="max-width homepageHeader">
       <h1>Hey! I'm Eugene</h1>
       <h2>I'm a UX Designer, Javascript Nerd &amp; Musician</h2>
       <p>
@@ -49,18 +49,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-h2 {
-  margin: 16px 0;
-}
-
-p {
-  margin-top: 32px;
-  font-weight: 100;
-}
-
-h3 {
-  font-weight: 100;
-}
-</style>

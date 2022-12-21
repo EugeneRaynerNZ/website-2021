@@ -33,11 +33,11 @@
 
     header{
         padding: 80px 0 60px 0;
-        text-align: center;
-        margin-bottom: 100px;
+        // text-align: center;
+        // margin-bottom: 50px;
 
-        &.small-header{
-            padding: 60px 0;
+        &.homepageHeader{
+            margin: 50px 0 0 0;
         }
 
         .svg--container{
@@ -75,6 +75,51 @@
             font-size: 36px;
             display: block;
         }
+    }
+
+    // Home
+    #home{
+        .nav{
+            #logo-words{
+                font-size: 3vw;
+            }
+        }
+    }
+
+    // Project
+    #project{
+
+        .projectHeader{
+            img{
+                max-width: 90%;
+            }
+        }
+
+        .bg{
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        section{
+            padding: 40px;
+        }
+
+        .containerLeftRight{
+            flex-direction: column;
+    
+            .left{
+                padding-right: 0;
+            }
+    
+            .right{
+                padding-top: 30px;
+                
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
     }
 
     // components
