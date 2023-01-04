@@ -1,5 +1,5 @@
 <template>
-  <div id="play">
+  <div id="play" class="mainContent--mobile">
     <header
       style="
         display: flex;

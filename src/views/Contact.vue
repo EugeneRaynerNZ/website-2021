@@ -1,5 +1,5 @@
 <template>
-  <div id="contact">
+  <div id="contact" class="mainContent--mobile">
     <div class="max-width">
       <Title :heading="'Contact me'"/>
       <div class="form">

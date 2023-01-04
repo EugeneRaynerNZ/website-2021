@@ -1,5 +1,5 @@
 <template>
-  <div id="creations">
+  <div id="creations" class="mainContent--mobile">
     <Header title="I love to create." subtitle="Check out some creations below" :small-header="true"/>
     <main class="max-width">
       <Paragraph 

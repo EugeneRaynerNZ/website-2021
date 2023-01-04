@@ -1,5 +1,5 @@
 <template>
-  <div id="project">
+  <div id="project" class="projectContent--mobile">
     <!-- logo n stuff goes here -->
     <header class="projectHeader">
       <img :src="velocityLanding" />
@@ -163,7 +163,7 @@ import MoodMap1 from "@/assets/velocity/mood-map-1.png";
 import MoodMap2 from "@/assets/velocity/mood-map-2.png";
 
 export default {
-  name: "Project",
+  name: "Project1",
   data() {
     return {
       velocityLanding: VelocityLanding,

@@ -1,15 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
-import Project from '@/views/Project.vue'
+import VelocityCRM from '@/views/projects/VelocityCRM.vue'
+import POSForecasting from '@/views/projects/POSForecasting.vue'
 import Play from '@/views/Play.vue'
-// import Creations from '@/views/Creations.vue'
-// import CreationsWebsite from '@/views/velocity.vue'
-// import CreationsBanner from '@/views/creations/Banner.vue'
-// import CreationsEmails from '@/views/creations/Emails.vue'
-// import CreationsEmail from '@/views/creations/Email.vue'
-// import Design from '@/views/Design.vue'
-// import Code from '@/views/Code.vue'
 import Contact from '@/views/Contact.vue'
 import NotFound from '@/views/404.vue'
 import SubmissionSuccess from '@/views/SubmissionSuccess'
@@ -33,9 +27,14 @@ const routes = [
     component: Play
   },
   {
-    path: '/:id',
-    name: 'Project',
-    component: Project
+    path: '/velocity-crm',
+    name: 'VelocityCRM',
+    component: VelocityCRM
+  },
+  {
+    path: '/point-of-sale-forecasting',
+    name: 'POSForecasting',
+    component: POSForecasting
   },
   { path: '/404', component: NotFound },  
   { path: '*', redirect: '/404' },

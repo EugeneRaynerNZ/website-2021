@@ -1,4 +1,12 @@
 #project{
+
+    &.pos-forecasting{
+      .projectHeader {
+        background: rgb(41,71,234);
+        background: linear-gradient(87deg, rgba(41,71,234,1) 0%, rgba(0,0,238,1) 100%);
+      }
+    }
+
     .projectHeader {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f19b7d+0,f1a189+100 */
         background: #f19b7d; /* Old browsers */

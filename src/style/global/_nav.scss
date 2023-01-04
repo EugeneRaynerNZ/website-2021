@@ -1,7 +1,4 @@
 .nav{
-    // background: $header;
-    // position: fixed;
-    // z-index: 1000;
     width: 100%;
     padding: 32px 0;
 
@@ -9,7 +6,6 @@
         display: flex;
         justify-content: space-between;
         
-
         &.max-width{
             padding-top: 0;
             padding-bottom: 0;
@@ -21,7 +17,6 @@
     }
 
     .nav--link{
-        // color: white;
         margin-left: 32px;
         display: block;
         position: relative;

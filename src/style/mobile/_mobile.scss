@@ -1,22 +1,5 @@
 @media only screen and (max-width: 600px) {
 
-    // hide nav for now
-    nav{
-        display: block;
-        bottom: 0;
-    }
-
-    .nav{
-        a{
-            margin-right: 0;
-        }
-
-        &--container{
-            justify-content: space-between;
-            text-align: center;
-        }
-    }
-
     // show nav
     .hamburger-container{
         display: block;
@@ -79,17 +62,44 @@
         }
     }
 
-    // Home
-    #home{
-        .nav{
-            #logo-words{
-                font-size: 3vw;
-            }
+    // Nav
+    .nav{
+        padding: 0;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        background: white;
+        border-bottom: 1px solid rgba(0,0,0,0.04);
+
+        .max-width{
+            margin: 0;
         }
 
-        main{
-            margin-top: 40px;
+        &--container{
+            .left{
+                display: none;
+            }
+    
+            .right{
+                a{
+                    margin-left: 0;
+                    margin-right: 40px;
+                }
+            }
         }
+    }
+
+    // Home
+    .mainContent--mobile{
+        margin-top: 90px;
+    }
+
+    .projectContent--mobile{
+        margin-top: 60px;
     }
 
     // Project
@@ -101,9 +111,15 @@
             }
         }
 
+        .max-width, .bg{
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
         .bg{
-            padding-left: 0;
-            padding-right: 0;
+            .max-width{
+                padding: 0;
+            }
         }
 
         section{
