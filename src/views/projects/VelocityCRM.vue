@@ -112,7 +112,7 @@
         <p>I conducted unmoderated usability tests via the platform <a href="https://www.usertesting.com/" target="_blank">usertesting.com</a>.</p>
         <p>I then compared the results between the old User Interface and the new User Interface and concluded:</p>
         <ul>
-          <li>Users took X less time on average to complete a task</li>
+          <li>Users took less time on average to complete a task</li>
           <li>Users knew where they were in the system</li>
           <li>Users knew what their next best action was</li>
         </ul>

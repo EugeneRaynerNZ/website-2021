@@ -30,7 +30,7 @@
 import Project from "@/components/Project.vue";
 import Me from "@/assets/me.svg";
 import Velocity from "@/assets/velocity.png";
-import POSForecasting from "@/assets/pos-forecasting/pos-forecasting.png";
+// import POSForecasting from "@/assets/pos-forecasting/pos-forecasting.png";
 
 
 export default {
@@ -46,10 +46,10 @@ export default {
           img: Velocity,
           link: "velocity-crm",
         },
-        {
-          img: POSForecasting,
-          link: "point-of-sale-forecasting",
-        },
+        // {
+        //   img: POSForecasting,
+        //   link: "point-of-sale-forecasting",
+        // },
       ],
     };
   },
