@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <nav class="nav">
+    <template v-if="weAreLive">
+      <nav class="nav">
       <div class="max-width">
         <div class="nav--container">
           <div class="left"><a href="/" id="logo-words">EUGENE RAYNER</a></div>
@@ -14,8 +15,13 @@
     </nav>
 
     <router-view />
+    </template>
+    
+    <div v-else style="display: flex; padding: 30px; width: calc(100% - 80px); height: calc(100vh - 80px); align-items: center; justify-content: center; text-align: center">
+      <h1 style="font-size: 24px;">Website is currently under maintenance</h1>
+    </div>
 
-    <footer class="footer">
+    <footer class="footer" :class="{maintenanceFooter: !weAreLive}">
       <div class="footer--container max-width">
         <div class="social-links">
           <a
@@ -123,3 +129,14 @@
     </footer>
   </div>
 </template>
+
+<script>
+
+export default {
+  data() {
+    return {
+      weAreLive: false
+    }
+  }
+}
+</script>

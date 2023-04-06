@@ -341,6 +341,13 @@ header h2 {
   margin-top: 5px;
 }
 
+.maintenanceFooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 .logo .st0 {
   fill: #64C6F2;
 }
