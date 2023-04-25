@@ -14,7 +14,7 @@
             <div class="left">
                 <h2>Overview</h2>
                 <p>Forecasting profits &amp; usage in the Utilities space has always been a nusance to say the least.</p>
-                <p>The goal of this project was to transform the way in which users </p>
+                <p>The goal of this project was to transform the way in which companies forecast </p>
             </div>
             <div class="right">
                 <h2>Role</h2>
