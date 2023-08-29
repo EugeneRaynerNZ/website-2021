@@ -124,7 +124,7 @@
         <p>I have a Front End Developer background and Gentrack did not have any front end developers.</p>
         <p>With my knowledge of CSS &amp; Javascript, I was asked to get the ball rolling while we found a full-time front end developer for the role. I was able to:</p>
         <ul>
-          <li>Pull the styles out of Figma and create a <a href="https://lesscss.org/">LESS</a> design framework for the front end</li>
+          <li>Pull the styles out of Figma and create a <a href="https://lesscss.org/" target="_blank">LESS</a> design framework for the front end</li>
           <li>Restyle the content using Javascript</li>
           <li>Help out the backend developers with any questions they had about CSS or Javascript</li>
         </ul>
