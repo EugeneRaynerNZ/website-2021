@@ -135,7 +135,7 @@
 export default {
   data() {
     return {
-      weAreLive: false
+      weAreLive: true
     }
   }
 }
