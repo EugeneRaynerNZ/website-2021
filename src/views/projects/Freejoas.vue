@@ -123,7 +123,7 @@
   import LogoOptions from "@/assets/freejoas/logo-options.png";
   
   export default {
-    name: "Project3",
+    name: "Freejoas",
     data() {
       return {
         landing: Landing,
