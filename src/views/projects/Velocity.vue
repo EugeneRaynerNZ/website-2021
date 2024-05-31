@@ -1,7 +1,7 @@
 <template>
   <div id="project" class="projectContent--mobile">
     <!-- logo n stuff goes here -->
-    <header class="projectHeader">
+    <header class="projectHeader projectHeaderVelocity">
       <img :src="velocityLanding" />
     </header>
 
@@ -20,7 +20,7 @@
                 <h2>Role</h2>
                 <p><strong>UX/UI Designer &amp; Front End Developer</strong></p>
                 <p>User Research, Prototyping, Testing and Front End Coding</p>
-                <p>December 2021 - Ongoing</p>
+                <p>2021 - 2024</p>
             </div>
         </div>
       </section>
@@ -29,9 +29,9 @@
         <div class="max-width">
             <h1>Background</h1>
             <p>Gentrack is a globally recognised utilities company, currently aimed at transforming the way in which utilities are managed. Velocity is one of their products. <a href="https://gentrack.com/" target="_blank">Learn more about what Gentrack does.</a></p>
-            <p class="exerpt">I am the sole UX designer </p>
-            <p>I joined Gentrack as a Senior UX Designer back in October of 2021. The landscape back then was ___ to say the least. Tasked with redesigning their biggest revenue gain, I set out to work.</p>
-            <p>I've grown tremendously over the past year, some key achievements of which I have listed below:</p>
+            <p class="exerpt">I was the sole UX designer on this project.</p>
+            <p>I joined Gentrack as a Senior UX Designer back in October of 2021. Tasked with redesigning their biggest revenue gain, I set out to work.</p>
+            <p>I've grown tremendously over the past 3 years, some key achievements of which I have listed below:</p>
             <ul>
                 <li><strong>Improved usability across the platform.</strong> Time On Task, Less Clicks, Holistic view of the customer</li>
                 <li><strong>Established a component library.</strong> It is used daily to export from Figma to front end components</li>
@@ -143,7 +143,7 @@
 
 
 <script>
-import VelocityLanding from "@/assets/velocity/velocity-landing.png";
+import VelocityLanding from "@/assets/velocity/velocity-landing-2.png";
 
 import UiCurrent1 from "@/assets/velocity/ui-current-1.png";
 import UiCurrent2 from "@/assets/velocity/ui-current-2.png";

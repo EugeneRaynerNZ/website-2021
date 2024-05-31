@@ -3,7 +3,7 @@
     <!-- logo n stuff goes here -->
     <header class="max-width homepageHeader">
       <h1>Hey! I'm Eugene</h1>
-      <h2>I'm a UX Designer, Javascript Nerd &amp; Musician</h2>
+      <h2>I'm a Product Designer, UX Designer, Javascript Nerd &amp; Musician</h2>
       <p>
         I'm a UX Designer based in Auckland, New Zealand with experience in
         delivering end-to-end UX/UI design for software products. I'm passionate
@@ -30,6 +30,8 @@
 import Project from "@/components/Project.vue";
 import Me from "@/assets/me.svg";
 import Velocity from "@/assets/velocity.png";
+import Freejoas from "@/assets/freejoas.png";
+import BoysNight from "@/assets/boys-night.png";
 // import POSForecasting from "@/assets/pos-forecasting/pos-forecasting.png";
 
 
@@ -44,7 +46,15 @@ export default {
       projects: [
         {
           img: Velocity,
-          link: "velocity-crm",
+          link: "velocity",
+        },
+        {
+          img: Freejoas,
+          link: "freejoas",
+        },
+        {
+          img: BoysNight,
+          link: "boys-night",
         },
         // {
         //   img: POSForecasting,

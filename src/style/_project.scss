@@ -8,28 +8,28 @@
     }
 
     .projectHeader {
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f19b7d+0,f1a189+100 */
-        background: #f19b7d; /* Old browsers */
-        background: -moz-linear-gradient(
-          top,
-          #f19b7d 0%,
-          #f1a189 100%
-        ); /* FF3.6-15 */
-        background: -webkit-linear-gradient(
-          top,
-          #f19b7d 0%,
-          #f1a189 100%
-        ); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(
-          to bottom,
-          #f19b7d 0%,
-          #f1a189 100%
-        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f19b7d', endColorstr='#f1a189',GradientType=0 ); /* IE6-9 */
+        &Velocity{
+          /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f19b7d+0,f1a189+100 */
+          background: linear-gradient(to right,  #f19b7d 0%,#f1a189 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+
+        &Freejoas {
+          /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4e866e+0,08653d+100 */
+          background: linear-gradient(to right,  #4e866e 0%,#08653d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+
+        &BoysNight {
+          /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3d4278+0,081165+100 */
+          background: linear-gradient(to right,  #3d4278 0%,#081165 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
       
         display: flex;
         justify-content: center;
         align-items: center;
+
+        img {
+          max-width: 800px;
+        }
       }
       
       strong{

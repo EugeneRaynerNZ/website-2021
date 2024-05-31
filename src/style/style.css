@@ -144,12 +144,12 @@ p, li {
 .nav--container .right {
   display: flex;
 }
-.nav .nav--link {
+.nav--link {
   margin-left: 32px;
   display: block;
   position: relative;
 }
-.nav .nav--link:after {
+.nav--link:after {
   content: "";
   background: black;
   height: 2px;
@@ -159,13 +159,13 @@ p, li {
   bottom: -5px;
   transition: all 0.2s ease-in-out;
 }
-.nav .nav--link:hover:after {
+.nav--link:hover:after {
   width: 100%;
 }
-.nav .nav--link:active {
+.nav--link:active {
   color: black;
 }
-.nav .nav--link:visited {
+.nav--link:visited {
   color: black;
 }
 .nav #logo-words:visited {
@@ -418,15 +418,24 @@ header h2 {
   background: linear-gradient(87deg, rgb(41, 71, 234) 0%, rgb(0, 0, 238) 100%);
 }
 #project .projectHeader {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f19b7d+0,f1a189+100 */
-  background: #f19b7d; /* Old browsers */
-  background: -moz-linear-gradient(top, #f19b7d 0%, #f1a189 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #f19b7d 0%, #f1a189 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #f19b7d 0%, #f1a189 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f19b7d", endColorstr="#f1a189",GradientType=0 ); /* IE6-9 */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#project .projectHeaderVelocity {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f19b7d+0,f1a189+100 */
+  background: linear-gradient(to right, #f19b7d 0%, #f1a189 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#project .projectHeaderFreejoas {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4e866e+0,08653d+100 */
+  background: linear-gradient(to right, #4e866e 0%, #08653d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#project .projectHeaderBoysNight {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3d4278+0,081165+100 */
+  background: linear-gradient(to right, #3d4278 0%, #081165 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#project .projectHeader img {
+  max-width: 800px;
 }
 #project strong {
   font-weight: 400;
