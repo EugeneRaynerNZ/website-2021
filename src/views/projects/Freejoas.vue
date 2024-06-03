@@ -92,11 +92,11 @@
           <h2>Colour Palette</h2>
           <div class="img--container" style="display: flex; flex-direction: column; gap: 32px;">
             <div>
-              <h3>Primary Colour</h3>
+              <h3 style="margin-bottom: 16px">Primary Colour</h3>
               <img :src="colourPaletteA" alt="Primary Colour">
             </div>
             <div>
-              <h3>Secondary Colour</h3>
+              <h3 style="margin-bottom: 16px">Secondary Colour</h3>
               <img :src="colourPaletteB" alt="Secondary Colour">
             </div>
           </div>
@@ -182,7 +182,7 @@
               </div>
             </div>
 
-            <div class="img--container" style="display: flex; flex-direction: column; gap: 32px">
+            <div style="display: flex; flex-direction: column; gap: 32px">
               <div style="display: flex; flex-direction: column; gap: 16px">
                 <h2 style="font-size: 64px;" class="roboto">Arima Madurai</h2>
                 <h3 style="font-size: 48px;" class="roboto">The quick brown fox jumps over the lazy dog</h3>
