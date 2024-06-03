@@ -43,7 +43,6 @@
         <section class="max-width creative">
           <h1>Brand & Logo Design</h1>
           <p>Freejoas needs to be friendly and familiar. Give the sense of walking in nature. Give the sense of fun and excitement. A free activity for families. A game of hide and seek.</p>
-          <p><i>Put in images about coming up with the logo design here</i></p>
 
           <h2>Creative Illustrations</h2>
           <div class="img--container"><img :src="sketches" alt="Freejoas Sketches"></div>
@@ -184,7 +183,7 @@
 
             <div style="display: flex; flex-direction: column; gap: 32px">
               <div style="display: flex; flex-direction: column; gap: 16px">
-                <h2 style="font-size: 64px;" class="roboto">Arima Madurai</h2>
+                <h2 style="font-size: 64px;" class="roboto">Roboto</h2>
                 <h3 style="font-size: 48px;" class="roboto">The quick brown fox jumps over the lazy dog</h3>
               </div>
               <div style="display: flex; flex-direction: column; gap: 16px">

@@ -4,12 +4,7 @@
     <header class="max-width homepageHeader">
       <h1>Hey! I'm Eugene</h1>
       <h2>I'm a Product Designer, UX Designer, Javascript Nerd &amp; Musician</h2>
-      <p>
-        I'm a UX Designer based in Auckland, New Zealand with experience in
-        delivering end-to-end UX/UI design for software products. I'm passionate
-        about improving the lives of others through design and am constantly
-        looking to learn new things everyday.
-      </p>
+      <p>I have 10 years experience in delivering end-to-end UX/UI design & Front End Development for web &amp; software products. I'm passionate about improving the lives of others through design and am constantly looking to learn new things everyday.</p>
     </header>
 
     <main class="max-width">
