@@ -40,15 +40,234 @@
           </div>
         </section>
   
-        <section class="max-width">
+        <section class="max-width creative">
           <h1>Brand & Logo Design</h1>
           <p>Freejoas needs to be friendly and familiar. Give the sense of walking in nature. Give the sense of fun and excitement. A free activity for families. A game of hide and seek.</p>
           <p><i>Put in images about coming up with the logo design here</i></p>
+
+          <h2>Creative Illustrations</h2>
           <div class="img--container"><img :src="sketches" alt="Freejoas Sketches"></div>
-          <div class="img--container"><img :src="logoIdeas" alt="Logo Ideas"></div>
-          <div class="img--container"><img :src="colourPalette" alt="Colour Ideas"></div>
-          <div class="img--container"><img :src="fonts" alt="Font Ideas"></div>
-          <div class="img--container"><img :src="logoOptions" alt="logoOptions"></div>
+
+          <h2>Logo Ideas</h2>
+          <div class="img--container" style="gap: 32px; display: flex; flex-wrap: wrap;">
+            <img :src="logo1" alt="Logo Idea 1">
+            <img :src="logo2" alt="Logo Idea 2">
+            <img :src="logo3" alt="Logo Idea 3">
+            <img :src="logo4" alt="Logo Idea 4">
+            <img :src="logo5" alt="Logo Idea 5">
+            <img :src="logo6" alt="Logo Idea 6">
+            <img :src="logo7" alt="Logo Idea 7">
+            <img :src="logo8" alt="Logo Idea 8">
+            <img :src="logo9" alt="Logo Idea 9">
+          </div>
+
+          <h2>Logo Options</h2>
+          <div class="img--container" style="display: flex; flex-direction: row; gap: 32px; flex-wrap: wrap;">
+            <div style="display: flex; flex-direction: column; gap: 16px">
+              <h3>Option A</h3>
+              <img :src="optionA" style="max-width: 64px" alt="Option A">
+              <div>
+                <p style="margin: 0;">Abstract design</p>
+                <p style="margin: 0;">Represents the inside of a Feijoa</p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 16px">
+              <h3>Option B</h3>
+              <img :src="optionB" style="max-width: 64px" alt="Option B">
+              <div>
+                <p style="margin: 0;">“X marks the spot”</p>
+                <p style="margin: 0;">Represents the inside of a Feijoa</p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 16px">
+              <h3>Option C</h3>
+              <img :src="optionC" style="max-width: 64px" alt="Option C">
+              <div>
+                <p style="margin: 0;">Most familiar</p>
+                <p style="margin: 0;">Represents the inside of a Feijoa</p>
+              </div>
+            </div>
+          </div>
+
+          <h2>Colour Palette</h2>
+          <div class="img--container" style="display: flex; flex-direction: column; gap: 32px;">
+            <div>
+              <h3>Primary Colour</h3>
+              <img :src="colourPaletteA" alt="Primary Colour">
+            </div>
+            <div>
+              <h3>Secondary Colour</h3>
+              <img :src="colourPaletteB" alt="Secondary Colour">
+            </div>
+          </div>
+
+          <h2>Fonts</h2>
+          <div style="display: flex; flex-direction: column; gap: 32px;">
+            <div style="display: flex; flex-direction: column; gap: 32px">
+              <div style="display: flex; flex-direction: column; gap: 16px">
+                <h2 style="font-size: 64px;" class="arima">Arima Madurai</h2>
+                <h3 style="font-size: 48px;" class="arima">The quick brown fox jumps over the lazy dog</h3>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 16px">
+                <div class="arima letters--container">
+                  <div class="letter uppercase">A</div>
+                  <div class="letter uppercase">B</div>
+                  <div class="letter uppercase">C</div>
+                  <div class="letter uppercase">D</div>
+                  <div class="letter uppercase">E</div>
+                  <div class="letter uppercase">F</div>
+                  <div class="letter uppercase">G</div>
+                  <div class="letter uppercase">H</div>
+                  <div class="letter uppercase">A</div>
+                  <div class="letter uppercase">I</div>
+                  <div class="letter uppercase">J</div>
+                  <div class="letter uppercase">K</div>
+                  <div class="letter uppercase">L</div>
+                  <div class="letter uppercase">M</div>
+                  <div class="letter uppercase">N</div>
+                  <div class="letter uppercase">O</div>
+                  <div class="letter uppercase">P</div>
+                  <div class="letter uppercase">Q</div>
+                  <div class="letter uppercase">R</div>
+                  <div class="letter uppercase">S</div>
+                  <div class="letter uppercase">T</div>
+                  <div class="letter uppercase">U</div>
+                  <div class="letter uppercase">V</div>
+                  <div class="letter uppercase">W</div>
+                  <div class="letter uppercase">X</div>
+                  <div class="letter uppercase">Y</div>
+                  <div class="letter uppercase">Z</div>
+                </div>
+                <div class="arima letters--container">
+                  <div class="letter lowercase">A</div>
+                  <div class="letter lowercase">B</div>
+                  <div class="letter lowercase">C</div>
+                  <div class="letter lowercase">D</div>
+                  <div class="letter lowercase">E</div>
+                  <div class="letter lowercase">F</div>
+                  <div class="letter lowercase">G</div>
+                  <div class="letter lowercase">H</div>
+                  <div class="letter lowercase">A</div>
+                  <div class="letter lowercase">I</div>
+                  <div class="letter lowercase">J</div>
+                  <div class="letter lowercase">K</div>
+                  <div class="letter lowercase">L</div>
+                  <div class="letter lowercase">M</div>
+                  <div class="letter lowercase">N</div>
+                  <div class="letter lowercase">O</div>
+                  <div class="letter lowercase">P</div>
+                  <div class="letter lowercase">Q</div>
+                  <div class="letter lowercase">R</div>
+                  <div class="letter lowercase">S</div>
+                  <div class="letter lowercase">T</div>
+                  <div class="letter lowercase">U</div>
+                  <div class="letter lowercase">V</div>
+                  <div class="letter lowercase">W</div>
+                  <div class="letter lowercase">X</div>
+                  <div class="letter lowercase">Y</div>
+                  <div class="letter lowercase">Z</div>
+                </div>
+              </div>
+              <div class="arima letters--container">
+                <div class="letter lowercase">1</div>
+                <div class="letter lowercase">2</div>
+                <div class="letter lowercase">3</div>
+                <div class="letter lowercase">4</div>
+                <div class="letter lowercase">5</div>
+                <div class="letter lowercase">6</div>
+                <div class="letter lowercase">7</div>
+                <div class="letter lowercase">8</div>
+                <div class="letter lowercase">9</div>
+                <div class="letter lowercase">0</div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 32px">
+              <div style="display: flex; flex-direction: column; gap: 16px">
+                <h2 style="font-size: 64px;" class="roboto">Arima Madurai</h2>
+                <h3 style="font-size: 48px;" class="roboto">The quick brown fox jumps over the lazy dog</h3>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 16px">
+                <div class="roboto letters--container">
+                  <div class="letter uppercase">A</div>
+                  <div class="letter uppercase">B</div>
+                  <div class="letter uppercase">C</div>
+                  <div class="letter uppercase">D</div>
+                  <div class="letter uppercase">E</div>
+                  <div class="letter uppercase">F</div>
+                  <div class="letter uppercase">G</div>
+                  <div class="letter uppercase">H</div>
+                  <div class="letter uppercase">A</div>
+                  <div class="letter uppercase">I</div>
+                  <div class="letter uppercase">J</div>
+                  <div class="letter uppercase">K</div>
+                  <div class="letter uppercase">L</div>
+                  <div class="letter uppercase">M</div>
+                  <div class="letter uppercase">N</div>
+                  <div class="letter uppercase">O</div>
+                  <div class="letter uppercase">P</div>
+                  <div class="letter uppercase">Q</div>
+                  <div class="letter uppercase">R</div>
+                  <div class="letter uppercase">S</div>
+                  <div class="letter uppercase">T</div>
+                  <div class="letter uppercase">U</div>
+                  <div class="letter uppercase">V</div>
+                  <div class="letter uppercase">W</div>
+                  <div class="letter uppercase">X</div>
+                  <div class="letter uppercase">Y</div>
+                  <div class="letter uppercase">Z</div>
+                </div>
+                <div class="roboto letters--container">
+                  <div class="letter lowercase">A</div>
+                  <div class="letter lowercase">B</div>
+                  <div class="letter lowercase">C</div>
+                  <div class="letter lowercase">D</div>
+                  <div class="letter lowercase">E</div>
+                  <div class="letter lowercase">F</div>
+                  <div class="letter lowercase">G</div>
+                  <div class="letter lowercase">H</div>
+                  <div class="letter lowercase">A</div>
+                  <div class="letter lowercase">I</div>
+                  <div class="letter lowercase">J</div>
+                  <div class="letter lowercase">K</div>
+                  <div class="letter lowercase">L</div>
+                  <div class="letter lowercase">M</div>
+                  <div class="letter lowercase">N</div>
+                  <div class="letter lowercase">O</div>
+                  <div class="letter lowercase">P</div>
+                  <div class="letter lowercase">Q</div>
+                  <div class="letter lowercase">R</div>
+                  <div class="letter lowercase">S</div>
+                  <div class="letter lowercase">T</div>
+                  <div class="letter lowercase">U</div>
+                  <div class="letter lowercase">V</div>
+                  <div class="letter lowercase">W</div>
+                  <div class="letter lowercase">X</div>
+                  <div class="letter lowercase">Y</div>
+                  <div class="letter lowercase">Z</div>
+                </div>
+              </div>
+              <div class="roboto letters--container">
+                <div class="letter lowercase">1</div>
+                <div class="letter lowercase">2</div>
+                <div class="letter lowercase">3</div>
+                <div class="letter lowercase">4</div>
+                <div class="letter lowercase">5</div>
+                <div class="letter lowercase">6</div>
+                <div class="letter lowercase">7</div>
+                <div class="letter lowercase">8</div>
+                <div class="letter lowercase">9</div>
+                <div class="letter lowercase">0</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Logo Ideas</h2>
+          <div class="img--container" style="display: flex; flex-direction: row; gap: 32px; flex-wrap: wrap">
+            <img :src="logoOptionA" style="max-width: 234px" alt="Logo Option A">
+            <img :src="logoOptionB" style="max-width: 234px" alt="Logo Option B">
+            <img :src="logoOptionC" style="max-width: 234px" alt="Logo Option C">
+          </div>
         </section>
   
         <section class="bg">
@@ -56,35 +275,9 @@
             <h1>Prototyping</h1>
             <p>I worked with a graduate backend developer who needed some real world experience to add to his portfolio.</p>
             <p>I like to create Figma prototypes so that it is easier to see what I am wanting to create. These prototypes are created in a way which show animations as they should be.</p>
-            <iframe width="800" height="925" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT9Rfeh6cCidjQpFoAActWy%2FFreejoas%3Fpage-id%3D3%253A3%26node-id%3D795-943%26viewport%3D-7669%252C-5021%252C0.25%26t%3DAkegz8emF6EbsiFf-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D795%253A943" allowfullscreen></iframe>
+            <iframe width="100%" height="925" style="max-width: 800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT9Rfeh6cCidjQpFoAActWy%2FFreejoas%3Fpage-id%3D3%253A3%26node-id%3D795-943%26viewport%3D-7669%252C-5021%252C0.25%26t%3DAkegz8emF6EbsiFf-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D795%253A943" allowfullscreen></iframe>
           </div>
         </section>
-        
-  
-        <!-- <section class="max-width">
-          <h1>Prototyping</h1>
-          <p>I worked with a graduate backend developer who needed some real world experience to add to his portfolio.</p>
-          <p>I like to create Figma prototypes so that it is easier to see what I am wanting to create. These prototypes are created in a way which show animations as they should be.</p>
-          <iframe width="800" height="925" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT9Rfeh6cCidjQpFoAActWy%2FFreejoas%3Fpage-id%3D3%253A3%26node-id%3D795-943%26viewport%3D-7669%252C-5021%252C0.25%26t%3DAkegz8emF6EbsiFf-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D795%253A943" allowfullscreen></iframe>
-        </section> -->
-  
-        <!-- <section class="bg">
-          <div class="max-width">
-            <h1>Testing the current state</h1>
-            <p>We prepped the current state of the User Interface by conducting unmoderated tests internally with users who had experience on the current platform.</p>
-            <p>Knowing what the most common User Journeys were from our Pulse Energy workshops, I developed a test which we would replicate for the new User Interface that would be designed.</p>
-            <div class="img--container"><img :src="uiMobileUITesting" alt="Current landscape"></div>
-            <p>Doing this would make comparing our new User Interface with our old one much easier.</p>
-          </div>
-        </section> -->
-  
-        
-  
-        <!-- <section class="max-width">
-          <h1>Wireframing the solution</h1>
-          
-          
-        </section> -->
   
         <section class="max-width">
           <h1>Creating a working version</h1>
@@ -115,12 +308,24 @@
   
   <script>
   import Landing from "@/assets/freejoas/landing.png";
-  
-  import Sketches from "@/assets/freejoas/creative-illustrations.png";
-  import LogoIdeas from "@/assets/freejoas/logo-ideas.png";
-  import ColourPalette from "@/assets/freejoas/colour-palette.png";
-  import Fonts from "@/assets/freejoas/fonts.png";
-  import LogoOptions from "@/assets/freejoas/logo-options.png";
+  import Sketches from "@/assets/freejoas/illustrations.png";
+  import Logo1 from "@/assets/freejoas/logo-1.png";
+  import Logo2 from "@/assets/freejoas/logo-2.png";
+  import Logo3 from "@/assets/freejoas/logo-3.png";
+  import Logo4 from "@/assets/freejoas/logo-4.png";
+  import Logo5 from "@/assets/freejoas/logo-5.png";
+  import Logo6 from "@/assets/freejoas/logo-6.png";
+  import Logo7 from "@/assets/freejoas/logo-7.png";
+  import Logo8 from "@/assets/freejoas/logo-8.png";
+  import Logo9 from "@/assets/freejoas/logo-9.png";
+  import OptionA from "@/assets/freejoas/option-a.png";
+  import OptionB from "@/assets/freejoas/option-b.png";
+  import OptionC from "@/assets/freejoas/option-c.png";
+  import ColourPaletteA from "@/assets/freejoas/primary-colour.png";
+  import ColourPaletteB from "@/assets/freejoas/secondary-colour.png";
+  import LogoOptionA from "@/assets/freejoas/logo-option--a.png";
+  import LogoOptionB from "@/assets/freejoas/logo-option--b.png";
+  import LogoOptionC from "@/assets/freejoas/logo-option--c.png";
   
   export default {
     name: "Freejoas",
@@ -128,10 +333,23 @@
       return {
         landing: Landing,
         sketches: Sketches,
-        logoIdeas: LogoIdeas,
-        colourPalette: ColourPalette,
-        fonts: Fonts,
-        logoOptions: LogoOptions,
+        logo1: Logo1,
+        logo2: Logo2,
+        logo3: Logo3,
+        logo4: Logo4,
+        logo5: Logo5,
+        logo6: Logo6,
+        logo7: Logo7,
+        logo8: Logo8,
+        logo9: Logo9,
+        optionA: OptionA,
+        optionB: OptionB,
+        optionC: OptionC,
+        colourPaletteA: ColourPaletteA,
+        colourPaletteB: ColourPaletteB,
+        logoOptionA: LogoOptionA,
+        logoOptionB: LogoOptionB,
+        logoOptionC: LogoOptionC,
       };
     },
   };

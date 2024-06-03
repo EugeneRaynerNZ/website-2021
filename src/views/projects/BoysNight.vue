@@ -45,10 +45,8 @@
         <p>Freejoas needs to be friendly and familiar. Give the sense of walking in nature. Give the sense of fun and excitement. A free activity for families. A game of hide and seek.</p>
         <p><i>Put in images about coming up with the logo design here</i></p>
         <div class="img--container"><img :src="sketches" alt="Freejoas Sketches"></div>
-        <!-- <div class="img--container"><img :src="logoIdeas" alt="Logo Ideas"></div> -->
         <div class="img--container"><img :src="colourPalette" alt="Colour Ideas"></div>
         <div class="img--container"><img :src="fonts" alt="Font Ideas"></div>
-        <!-- <div class="img--container"><img :src="logoOptions" alt="logoOptions"></div> -->
       </section>
 
       <section class="bg">
@@ -59,32 +57,6 @@
           <iframe width="800" height="925" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT9Rfeh6cCidjQpFoAActWy%2FFreejoas%3Fpage-id%3D3%253A3%26node-id%3D701-212%26viewport%3D-7669%252C-5021%252C0.25%26t%3DLSuMjRolmLfxYzlb-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D701%253A212" allowfullscreen></iframe>
         </div>
       </section>
-      
-
-      <!-- <section class="max-width">
-        <h1>Prototyping</h1>
-        <p>I worked with a graduate backend developer who needed some real world experience to add to his portfolio.</p>
-        <p>I like to create Figma prototypes so that it is easier to see what I am wanting to create. These prototypes are created in a way which show animations as they should be.</p>
-        <iframe width="800" height="925" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT9Rfeh6cCidjQpFoAActWy%2FFreejoas%3Fpage-id%3D3%253A3%26node-id%3D795-943%26viewport%3D-7669%252C-5021%252C0.25%26t%3DAkegz8emF6EbsiFf-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D795%253A943" allowfullscreen></iframe>
-      </section> -->
-
-      <!-- <section class="bg">
-        <div class="max-width">
-          <h1>Testing the current state</h1>
-          <p>We prepped the current state of the User Interface by conducting unmoderated tests internally with users who had experience on the current platform.</p>
-          <p>Knowing what the most common User Journeys were from our Pulse Energy workshops, I developed a test which we would replicate for the new User Interface that would be designed.</p>
-          <div class="img--container"><img :src="uiMobileUITesting" alt="Current landscape"></div>
-          <p>Doing this would make comparing our new User Interface with our old one much easier.</p>
-        </div>
-      </section> -->
-
-      
-
-      <!-- <section class="max-width">
-        <h1>Wireframing the solution</h1>
-        
-        
-      </section> -->
 
       <section class="max-width">
         <h1>Creating a working version</h1>
@@ -117,10 +89,8 @@
 import Landing from "@/assets/boys-night/landing.png";
 
 import Sketches from "@/assets/boys-night/creative-illustrations.png";
-// import LogoIdeas from "@/assets/freejoas/logo-ideas.png";
 import ColourPalette from "@/assets/boys-night/colour-palette.png";
 import Fonts from "@/assets/boys-night/fonts.png";
-// import LogoOptions from "@/assets/freejoas/logo-options.png";
 
 export default {
   name: "Boys Night",

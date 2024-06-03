@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -567,6 +568,50 @@ header h2 {
   color: white;
   align-self: flex-start;
   min-width: 220px;
+}
+
+#project .creative h2 {
+  margin-bottom: 32px;
+}
+#project .img--container {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.arima {
+  font-family: "Arima", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.letters--container {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.letters--container div {
+  display: flex;
+  align-items: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.letter {
+  font-size: 40px;
 }
 
 @media only screen and (max-width: 600px) {
