@@ -102,7 +102,7 @@
           </div>
 
           <h2>Fonts</h2>
-          <div style="display: flex; flex-direction: column; gap: 32px;">
+          <div class="img--container" style="display: flex; flex-direction: column; gap: 32px;">
             <div style="display: flex; flex-direction: column; gap: 32px">
               <div style="display: flex; flex-direction: column; gap: 16px">
                 <h2 style="font-size: 64px;" class="arima">Arima Madurai</h2>
@@ -182,7 +182,7 @@
               </div>
             </div>
 
-            <div style="display: flex; flex-direction: column; gap: 32px">
+            <div class="img--container" style="display: flex; flex-direction: column; gap: 32px">
               <div style="display: flex; flex-direction: column; gap: 16px">
                 <h2 style="font-size: 64px;" class="roboto">Arima Madurai</h2>
                 <h3 style="font-size: 48px;" class="roboto">The quick brown fox jumps over the lazy dog</h3>
