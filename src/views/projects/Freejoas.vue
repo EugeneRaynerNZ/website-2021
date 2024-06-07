@@ -41,246 +41,260 @@
         </section>
   
         <section class="max-width creative">
-          <h1>Brand & Logo Design</h1>
-          <p>Freejoas needs to be friendly and familiar. Give the sense of walking in nature. Give the sense of fun and excitement. A free activity for families. A game of hide and seek.</p>
 
-          <h2>Creative Illustrations</h2>
-          <div class="img--container"><img :src="sketches" alt="Freejoas Sketches"></div>
-
-          <h2>Logo Ideas</h2>
-          <div class="img--container" style="gap: 32px; display: flex; flex-wrap: wrap;">
-            <img :src="logo1" alt="Logo Idea 1">
-            <img :src="logo2" alt="Logo Idea 2">
-            <img :src="logo3" alt="Logo Idea 3">
-            <img :src="logo4" alt="Logo Idea 4">
-            <img :src="logo5" alt="Logo Idea 5">
-            <img :src="logo6" alt="Logo Idea 6">
-            <img :src="logo7" alt="Logo Idea 7">
-            <img :src="logo8" alt="Logo Idea 8">
-            <img :src="logo9" alt="Logo Idea 9">
+          <div class="creative--container">
+            <h1>Brand & Logo Design</h1>
+            <p>Freejoas needs to be friendly and familiar. Give the sense of walking in nature. Give the sense of fun and excitement. A free activity for families. A game of hide and seek.</p>
           </div>
 
-          <h2>Logo Options</h2>
-          <div class="img--container" style="display: flex; flex-direction: row; gap: 32px; flex-wrap: wrap;">
-            <div style="display: flex; flex-direction: column; gap: 16px">
-              <h3>Option A</h3>
-              <img :src="optionA" style="max-width: 64px" alt="Option A">
-              <div>
-                <p style="margin: 0;">Abstract design</p>
-                <p style="margin: 0;">Represents the inside of a Feijoa</p>
-              </div>
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 16px">
-              <h3>Option B</h3>
-              <img :src="optionB" style="max-width: 64px" alt="Option B">
-              <div>
-                <p style="margin: 0;">“X marks the spot”</p>
-                <p style="margin: 0;">Represents the inside of a Feijoa</p>
-              </div>
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 16px">
-              <h3>Option C</h3>
-              <img :src="optionC" style="max-width: 64px" alt="Option C">
-              <div>
-                <p style="margin: 0;">Most familiar</p>
-                <p style="margin: 0;">Represents the inside of a Feijoa</p>
-              </div>
+          <div class="creative--container">
+            <h2>Creative Illustrations</h2>
+            <div class="img--container"><img :src="sketches" alt="Freejoas Sketches"></div>
+          </div>
+
+          <div class="creative--container">
+            <h2>Logo Ideas</h2>
+            <div class="img--container" style="gap: 32px; display: flex; flex-wrap: wrap;">
+              <img :src="logo1" alt="Logo Idea 1">
+              <img :src="logo2" alt="Logo Idea 2">
+              <img :src="logo3" alt="Logo Idea 3">
+              <img :src="logo4" alt="Logo Idea 4">
+              <img :src="logo5" alt="Logo Idea 5">
+              <img :src="logo6" alt="Logo Idea 6">
+              <img :src="logo7" alt="Logo Idea 7">
+              <img :src="logo8" alt="Logo Idea 8">
+              <img :src="logo9" alt="Logo Idea 9">
             </div>
           </div>
 
-          <h2>Colour Palette</h2>
-          <div class="img--container" style="display: flex; flex-direction: column; gap: 32px;">
-            <div>
-              <h3 style="margin-bottom: 16px">Primary Colour</h3>
-              <img :src="colourPaletteA" alt="Primary Colour">
-            </div>
-            <div>
-              <h3 style="margin-bottom: 16px">Secondary Colour</h3>
-              <img :src="colourPaletteB" alt="Secondary Colour">
-            </div>
-          </div>
-
-          <h2>Fonts</h2>
-          <div class="img--container" style="display: flex; flex-direction: column; gap: 32px;">
-            <div style="display: flex; flex-direction: column; gap: 32px">
+          <div class="creative--container">
+            <h2>Logo Options</h2>
+            <div class="img--container" style="display: flex; flex-direction: row; gap: 32px; flex-wrap: wrap;">
               <div style="display: flex; flex-direction: column; gap: 16px">
-                <h2 style="font-size: 64px;" class="arima">Arima Madurai</h2>
-                <h3 style="font-size: 48px;" class="arima">The quick brown fox jumps over the lazy dog</h3>
+                <h3>Option A</h3>
+                <img :src="optionA" style="max-width: 64px" alt="Option A">
+                <div>
+                  <p style="margin: 0;">Abstract design</p>
+                  <p style="margin: 0;">Represents the inside of a Feijoa</p>
+                </div>
               </div>
               <div style="display: flex; flex-direction: column; gap: 16px">
+                <h3>Option B</h3>
+                <img :src="optionB" style="max-width: 64px" alt="Option B">
+                <div>
+                  <p style="margin: 0;">“X marks the spot”</p>
+                  <p style="margin: 0;">Represents the inside of a Feijoa</p>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 16px">
+                <h3>Option C</h3>
+                <img :src="optionC" style="max-width: 64px" alt="Option C">
+                <div>
+                  <p style="margin: 0;">Most familiar</p>
+                  <p style="margin: 0;">Represents the inside of a Feijoa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="creative--container">
+            <h2>Colour Palette</h2>
+            <div class="img--container" style="display: flex; flex-direction: column; gap: 32px;">
+              <div>
+                <h3 style="margin-bottom: 16px">Primary Colour</h3>
+                <img :src="colourPaletteA" alt="Primary Colour">
+              </div>
+              <div>
+                <h3 style="margin-bottom: 16px">Secondary Colour</h3>
+                <img :src="colourPaletteB" alt="Secondary Colour">
+              </div>
+            </div>
+          </div>
+
+          <div class="creative--container">
+            <h2>Fonts</h2>
+            <div class="img--container" style="display: flex; flex-direction: column; gap: 32px;">
+              <div style="display: flex; flex-direction: column; gap: 32px">
+                <div style="display: flex; flex-direction: column; gap: 16px">
+                  <h2 class="arima font-heading">Arima Madurai</h2>
+                  <h3 class="arima font-subheading">The quick brown fox jumps over the lazy dog</h3>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 16px">
+                  <div class="arima letters--container">
+                    <div class="letter uppercase">A</div>
+                    <div class="letter uppercase">B</div>
+                    <div class="letter uppercase">C</div>
+                    <div class="letter uppercase">D</div>
+                    <div class="letter uppercase">E</div>
+                    <div class="letter uppercase">F</div>
+                    <div class="letter uppercase">G</div>
+                    <div class="letter uppercase">H</div>
+                    <div class="letter uppercase">A</div>
+                    <div class="letter uppercase">I</div>
+                    <div class="letter uppercase">J</div>
+                    <div class="letter uppercase">K</div>
+                    <div class="letter uppercase">L</div>
+                    <div class="letter uppercase">M</div>
+                    <div class="letter uppercase">N</div>
+                    <div class="letter uppercase">O</div>
+                    <div class="letter uppercase">P</div>
+                    <div class="letter uppercase">Q</div>
+                    <div class="letter uppercase">R</div>
+                    <div class="letter uppercase">S</div>
+                    <div class="letter uppercase">T</div>
+                    <div class="letter uppercase">U</div>
+                    <div class="letter uppercase">V</div>
+                    <div class="letter uppercase">W</div>
+                    <div class="letter uppercase">X</div>
+                    <div class="letter uppercase">Y</div>
+                    <div class="letter uppercase">Z</div>
+                  </div>
+                  <div class="arima letters--container">
+                    <div class="letter lowercase">A</div>
+                    <div class="letter lowercase">B</div>
+                    <div class="letter lowercase">C</div>
+                    <div class="letter lowercase">D</div>
+                    <div class="letter lowercase">E</div>
+                    <div class="letter lowercase">F</div>
+                    <div class="letter lowercase">G</div>
+                    <div class="letter lowercase">H</div>
+                    <div class="letter lowercase">A</div>
+                    <div class="letter lowercase">I</div>
+                    <div class="letter lowercase">J</div>
+                    <div class="letter lowercase">K</div>
+                    <div class="letter lowercase">L</div>
+                    <div class="letter lowercase">M</div>
+                    <div class="letter lowercase">N</div>
+                    <div class="letter lowercase">O</div>
+                    <div class="letter lowercase">P</div>
+                    <div class="letter lowercase">Q</div>
+                    <div class="letter lowercase">R</div>
+                    <div class="letter lowercase">S</div>
+                    <div class="letter lowercase">T</div>
+                    <div class="letter lowercase">U</div>
+                    <div class="letter lowercase">V</div>
+                    <div class="letter lowercase">W</div>
+                    <div class="letter lowercase">X</div>
+                    <div class="letter lowercase">Y</div>
+                    <div class="letter lowercase">Z</div>
+                  </div>
+                </div>
                 <div class="arima letters--container">
-                  <div class="letter uppercase">A</div>
-                  <div class="letter uppercase">B</div>
-                  <div class="letter uppercase">C</div>
-                  <div class="letter uppercase">D</div>
-                  <div class="letter uppercase">E</div>
-                  <div class="letter uppercase">F</div>
-                  <div class="letter uppercase">G</div>
-                  <div class="letter uppercase">H</div>
-                  <div class="letter uppercase">A</div>
-                  <div class="letter uppercase">I</div>
-                  <div class="letter uppercase">J</div>
-                  <div class="letter uppercase">K</div>
-                  <div class="letter uppercase">L</div>
-                  <div class="letter uppercase">M</div>
-                  <div class="letter uppercase">N</div>
-                  <div class="letter uppercase">O</div>
-                  <div class="letter uppercase">P</div>
-                  <div class="letter uppercase">Q</div>
-                  <div class="letter uppercase">R</div>
-                  <div class="letter uppercase">S</div>
-                  <div class="letter uppercase">T</div>
-                  <div class="letter uppercase">U</div>
-                  <div class="letter uppercase">V</div>
-                  <div class="letter uppercase">W</div>
-                  <div class="letter uppercase">X</div>
-                  <div class="letter uppercase">Y</div>
-                  <div class="letter uppercase">Z</div>
-                </div>
-                <div class="arima letters--container">
-                  <div class="letter lowercase">A</div>
-                  <div class="letter lowercase">B</div>
-                  <div class="letter lowercase">C</div>
-                  <div class="letter lowercase">D</div>
-                  <div class="letter lowercase">E</div>
-                  <div class="letter lowercase">F</div>
-                  <div class="letter lowercase">G</div>
-                  <div class="letter lowercase">H</div>
-                  <div class="letter lowercase">A</div>
-                  <div class="letter lowercase">I</div>
-                  <div class="letter lowercase">J</div>
-                  <div class="letter lowercase">K</div>
-                  <div class="letter lowercase">L</div>
-                  <div class="letter lowercase">M</div>
-                  <div class="letter lowercase">N</div>
-                  <div class="letter lowercase">O</div>
-                  <div class="letter lowercase">P</div>
-                  <div class="letter lowercase">Q</div>
-                  <div class="letter lowercase">R</div>
-                  <div class="letter lowercase">S</div>
-                  <div class="letter lowercase">T</div>
-                  <div class="letter lowercase">U</div>
-                  <div class="letter lowercase">V</div>
-                  <div class="letter lowercase">W</div>
-                  <div class="letter lowercase">X</div>
-                  <div class="letter lowercase">Y</div>
-                  <div class="letter lowercase">Z</div>
+                  <div class="letter lowercase">1</div>
+                  <div class="letter lowercase">2</div>
+                  <div class="letter lowercase">3</div>
+                  <div class="letter lowercase">4</div>
+                  <div class="letter lowercase">5</div>
+                  <div class="letter lowercase">6</div>
+                  <div class="letter lowercase">7</div>
+                  <div class="letter lowercase">8</div>
+                  <div class="letter lowercase">9</div>
+                  <div class="letter lowercase">0</div>
                 </div>
               </div>
-              <div class="arima letters--container">
-                <div class="letter lowercase">1</div>
-                <div class="letter lowercase">2</div>
-                <div class="letter lowercase">3</div>
-                <div class="letter lowercase">4</div>
-                <div class="letter lowercase">5</div>
-                <div class="letter lowercase">6</div>
-                <div class="letter lowercase">7</div>
-                <div class="letter lowercase">8</div>
-                <div class="letter lowercase">9</div>
-                <div class="letter lowercase">0</div>
-              </div>
-            </div>
 
-            <div style="display: flex; flex-direction: column; gap: 32px">
-              <div style="display: flex; flex-direction: column; gap: 16px">
-                <h2 style="font-size: 64px;" class="roboto">Roboto</h2>
-                <h3 style="font-size: 48px;" class="roboto">The quick brown fox jumps over the lazy dog</h3>
-              </div>
-              <div style="display: flex; flex-direction: column; gap: 16px">
-                <div class="roboto letters--container">
-                  <div class="letter uppercase">A</div>
-                  <div class="letter uppercase">B</div>
-                  <div class="letter uppercase">C</div>
-                  <div class="letter uppercase">D</div>
-                  <div class="letter uppercase">E</div>
-                  <div class="letter uppercase">F</div>
-                  <div class="letter uppercase">G</div>
-                  <div class="letter uppercase">H</div>
-                  <div class="letter uppercase">A</div>
-                  <div class="letter uppercase">I</div>
-                  <div class="letter uppercase">J</div>
-                  <div class="letter uppercase">K</div>
-                  <div class="letter uppercase">L</div>
-                  <div class="letter uppercase">M</div>
-                  <div class="letter uppercase">N</div>
-                  <div class="letter uppercase">O</div>
-                  <div class="letter uppercase">P</div>
-                  <div class="letter uppercase">Q</div>
-                  <div class="letter uppercase">R</div>
-                  <div class="letter uppercase">S</div>
-                  <div class="letter uppercase">T</div>
-                  <div class="letter uppercase">U</div>
-                  <div class="letter uppercase">V</div>
-                  <div class="letter uppercase">W</div>
-                  <div class="letter uppercase">X</div>
-                  <div class="letter uppercase">Y</div>
-                  <div class="letter uppercase">Z</div>
+              <div style="display: flex; flex-direction: column; gap: 32px">
+                <div style="display: flex; flex-direction: column; gap: 16px">
+                  <h2 class="roboto font-heading">Roboto</h2>
+                  <h3 class="roboto font-subheading">The quick brown fox jumps over the lazy dog</h3>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 16px">
+                  <div class="roboto letters--container">
+                    <div class="letter uppercase">A</div>
+                    <div class="letter uppercase">B</div>
+                    <div class="letter uppercase">C</div>
+                    <div class="letter uppercase">D</div>
+                    <div class="letter uppercase">E</div>
+                    <div class="letter uppercase">F</div>
+                    <div class="letter uppercase">G</div>
+                    <div class="letter uppercase">H</div>
+                    <div class="letter uppercase">A</div>
+                    <div class="letter uppercase">I</div>
+                    <div class="letter uppercase">J</div>
+                    <div class="letter uppercase">K</div>
+                    <div class="letter uppercase">L</div>
+                    <div class="letter uppercase">M</div>
+                    <div class="letter uppercase">N</div>
+                    <div class="letter uppercase">O</div>
+                    <div class="letter uppercase">P</div>
+                    <div class="letter uppercase">Q</div>
+                    <div class="letter uppercase">R</div>
+                    <div class="letter uppercase">S</div>
+                    <div class="letter uppercase">T</div>
+                    <div class="letter uppercase">U</div>
+                    <div class="letter uppercase">V</div>
+                    <div class="letter uppercase">W</div>
+                    <div class="letter uppercase">X</div>
+                    <div class="letter uppercase">Y</div>
+                    <div class="letter uppercase">Z</div>
+                  </div>
+                  <div class="roboto letters--container">
+                    <div class="letter lowercase">A</div>
+                    <div class="letter lowercase">B</div>
+                    <div class="letter lowercase">C</div>
+                    <div class="letter lowercase">D</div>
+                    <div class="letter lowercase">E</div>
+                    <div class="letter lowercase">F</div>
+                    <div class="letter lowercase">G</div>
+                    <div class="letter lowercase">H</div>
+                    <div class="letter lowercase">A</div>
+                    <div class="letter lowercase">I</div>
+                    <div class="letter lowercase">J</div>
+                    <div class="letter lowercase">K</div>
+                    <div class="letter lowercase">L</div>
+                    <div class="letter lowercase">M</div>
+                    <div class="letter lowercase">N</div>
+                    <div class="letter lowercase">O</div>
+                    <div class="letter lowercase">P</div>
+                    <div class="letter lowercase">Q</div>
+                    <div class="letter lowercase">R</div>
+                    <div class="letter lowercase">S</div>
+                    <div class="letter lowercase">T</div>
+                    <div class="letter lowercase">U</div>
+                    <div class="letter lowercase">V</div>
+                    <div class="letter lowercase">W</div>
+                    <div class="letter lowercase">X</div>
+                    <div class="letter lowercase">Y</div>
+                    <div class="letter lowercase">Z</div>
+                  </div>
                 </div>
                 <div class="roboto letters--container">
-                  <div class="letter lowercase">A</div>
-                  <div class="letter lowercase">B</div>
-                  <div class="letter lowercase">C</div>
-                  <div class="letter lowercase">D</div>
-                  <div class="letter lowercase">E</div>
-                  <div class="letter lowercase">F</div>
-                  <div class="letter lowercase">G</div>
-                  <div class="letter lowercase">H</div>
-                  <div class="letter lowercase">A</div>
-                  <div class="letter lowercase">I</div>
-                  <div class="letter lowercase">J</div>
-                  <div class="letter lowercase">K</div>
-                  <div class="letter lowercase">L</div>
-                  <div class="letter lowercase">M</div>
-                  <div class="letter lowercase">N</div>
-                  <div class="letter lowercase">O</div>
-                  <div class="letter lowercase">P</div>
-                  <div class="letter lowercase">Q</div>
-                  <div class="letter lowercase">R</div>
-                  <div class="letter lowercase">S</div>
-                  <div class="letter lowercase">T</div>
-                  <div class="letter lowercase">U</div>
-                  <div class="letter lowercase">V</div>
-                  <div class="letter lowercase">W</div>
-                  <div class="letter lowercase">X</div>
-                  <div class="letter lowercase">Y</div>
-                  <div class="letter lowercase">Z</div>
+                  <div class="letter lowercase">1</div>
+                  <div class="letter lowercase">2</div>
+                  <div class="letter lowercase">3</div>
+                  <div class="letter lowercase">4</div>
+                  <div class="letter lowercase">5</div>
+                  <div class="letter lowercase">6</div>
+                  <div class="letter lowercase">7</div>
+                  <div class="letter lowercase">8</div>
+                  <div class="letter lowercase">9</div>
+                  <div class="letter lowercase">0</div>
                 </div>
-              </div>
-              <div class="roboto letters--container">
-                <div class="letter lowercase">1</div>
-                <div class="letter lowercase">2</div>
-                <div class="letter lowercase">3</div>
-                <div class="letter lowercase">4</div>
-                <div class="letter lowercase">5</div>
-                <div class="letter lowercase">6</div>
-                <div class="letter lowercase">7</div>
-                <div class="letter lowercase">8</div>
-                <div class="letter lowercase">9</div>
-                <div class="letter lowercase">0</div>
               </div>
             </div>
           </div>
 
-          <h2>Logo Ideas</h2>
-          <div class="img--container" style="display: flex; flex-direction: row; gap: 32px; flex-wrap: wrap">
-            <img :src="logoOptionA" style="max-width: 234px" alt="Logo Option A">
-            <img :src="logoOptionB" style="max-width: 234px" alt="Logo Option B">
-            <img :src="logoOptionC" style="max-width: 234px" alt="Logo Option C">
+          <div class="creative--container">
+            <h2>Logo Ideas</h2>
+            <div class="img--container" style="display: flex; flex-direction: row; gap: 32px; flex-wrap: wrap">
+              <img :src="logoOptionA" style="max-width: 234px" alt="Logo Option A">
+              <img :src="logoOptionB" style="max-width: 234px" alt="Logo Option B">
+              <img :src="logoOptionC" style="max-width: 234px" alt="Logo Option C">
+            </div>
           </div>
         </section>
   
         <section class="bg">
           <div class="max-width">
             <h1>Prototyping</h1>
-            <p>I worked with a graduate backend developer who needed some real world experience to add to his portfolio.</p>
-            <p>I like to create Figma prototypes so that it is easier to see what I am wanting to create. These prototypes are created in a way which show animations as they should be.</p>
+            <p>I worked with a graduate backend developer; <a target="_blank" href="https://github.com/wsking233">William Wang</a> - who needed some real world experience to add to his portfolio. William has been extremely helpful as my knowledge of backend development is an area that needs to be worked on.</p>
             <iframe width="100%" height="925" style="max-width: 800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT9Rfeh6cCidjQpFoAActWy%2FFreejoas%3Fpage-id%3D3%253A3%26node-id%3D795-943%26viewport%3D-7669%252C-5021%252C0.25%26t%3DAkegz8emF6EbsiFf-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D795%253A943" allowfullscreen></iframe>
           </div>
         </section>
   
         <section class="max-width">
           <h1>Creating a working version</h1>
-          <p>I want Freejoas to be accessible to all walks of life, so I created a Webapp - something that is accessible on all devices regardless....</p>
+          <p>I want Freejoas to be accessible to all walks of life, so I created a Webapp. I worked closesly with a Junior Backend Developer; <a target="_blank" href="https://github.com/wsking233">William Wang</a> - who needed work experience for his Portfolio.</p>
           <p>I began by building a simple Front End using <a target="_blank" href="https://react.dev">React</a></p>
           <p>I chose React as it is something I am still learning and wanted to learn while also creating.</p>
           <p>I also chose to use <a target="_blank" href="https://sass-lang.com">Sass</a> - a preprocessor for CSS which makes it easier to:</p>

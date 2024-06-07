@@ -40,31 +40,39 @@
         </div>
       </section>
 
-      <section class="max-width">
-        <h1>Brand & Logo Design</h1>
-        <p>Boys Night needs to be friendly and familiar. Give the sense of fun and excitement. A free and easy way to track games between friends.</p>
+      <section class="max-width creative">
 
-        <h2>Illustrations</h2>
-        <div class="img--container"><img :src="sketches" alt="Freejoas Sketches"></div>
+        <div class="creative--container">
+          <h1>Brand & Logo Design</h1>
+          <p>Boys Night needs to be friendly and familiar. Give the sense of fun and excitement. A free and easy way to track games between friends.</p>
+        </div>
 
-        <h2>Colour Palette</h2>
-        <div class="img--container" style="display: flex; flex-direction: column; gap: 32px;">
-          <div>
-            <h3 style="margin-bottom: 16px">Primary Colour</h3>
-            <img :src="colourPaletteA" alt="Primary Colour">
-          </div>
-          <div>
-            <h3 style="margin-bottom: 16px">Secondary Colour</h3>
-            <img :src="colourPaletteB" alt="Secondary Colour">
+        <div class="creative--container">
+          <h2>Illustrations</h2>
+          <div class="img--container"><img :src="sketches" alt="Freejoas Sketches"></div>
+        </div>
+
+        <div class="creative--container">
+          <h2>Colour Palette</h2>
+          <div class="img--container" style="display: flex; flex-direction: column; gap: 32px;">
+            <div>
+              <h3 style="margin-bottom: 16px">Primary Colour</h3>
+              <img :src="colourPaletteA" alt="Primary Colour">
+            </div>
+            <div>
+              <h3 style="margin-bottom: 16px">Secondary Colour</h3>
+              <img :src="colourPaletteB" alt="Secondary Colour">
+            </div>
           </div>
         </div>
 
-        <h2>Fonts</h2>
+        <div class="creative--container">
+          <h2>Fonts</h2>
           <div class="img--container" style="display: flex; flex-direction: column; gap: 32px;">
             <div style="display: flex; flex-direction: column; gap: 32px">
               <div style="display: flex; flex-direction: column; gap: 16px">
-                <h2 style="font-size: 64px; font-weight: 700" class="source-sans">Source Sans</h2>
-                <h3 style="font-size: 48px;" class="source-sans">The quick brown fox jumps over the lazy dog</h3>
+                <h2 class="source-sans font-heading">Source Sans</h2>
+                <h3 class="source-sans font-subheading">The quick brown fox jumps over the lazy dog</h3>
               </div>
               <div style="display: flex; flex-direction: column; gap: 16px">
                 <div class="source-sans letters--container">
@@ -142,8 +150,8 @@
 
             <div style="display: flex; flex-direction: column; gap: 32px">
               <div style="display: flex; flex-direction: column; gap: 16px">
-                <h2 style="font-size: 64px;" class="roboto">Roboto</h2>
-                <h3 style="font-size: 48px;" class="roboto">The quick brown fox jumps over the lazy dog</h3>
+                <h2 class="roboto font-heading">Roboto</h2>
+                <h3 class="roboto font-subheading">The quick brown fox jumps over the lazy dog</h3>
               </div>
               <div style="display: flex; flex-direction: column; gap: 16px">
                 <div class="roboto letters--container">
@@ -219,13 +227,14 @@
               </div>
             </div>
           </div>
+        </div>
       </section>
 
       <section class="bg">
         <div class="max-width">
           <h1>Prototyping</h1>
-          <p>I worked with a graduate backend developer who needed some real world experience to add to his portfolio.</p>
-          <p>I like to create Figma prototypes so that it is easier to see what I am wanting to create. These prototypes are created in a way which show animations as they should be.</p>
+          <p>I like to create Figma prototypes as a point of reference so that I can refer back to what I am wanting to create at a glance while I code the project.</p>
+          <p>Sometimes I like to create these prototypes in a way which show animation which allow others greater visibility over what I am wanting to create.</p>
           <iframe width="100%" height="925" style="max-width: 800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT9Rfeh6cCidjQpFoAActWy%2FFreejoas%3Fpage-id%3D3%253A3%26node-id%3D701-212%26viewport%3D-7669%252C-5021%252C0.25%26t%3DLSuMjRolmLfxYzlb-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D701%253A212" allowfullscreen></iframe>
         </div>
       </section>

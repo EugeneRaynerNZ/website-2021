@@ -497,6 +497,17 @@ header h2 {
   text-align: center;
   font-size: 28px;
 }
+#project .creative {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+#project .font-heading {
+  font-size: 64px;
+}
+#project .font-subheading {
+  font-size: 48px;
+}
 
 #play header {
   margin-bottom: 40px;

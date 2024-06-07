@@ -103,4 +103,18 @@
           text-align: center;
           font-size: 28px;
       }
+
+      .creative {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      .font-heading {
+        font-size: 64px
+      }
+
+      .font-subheading {
+        font-size: 48px;
+      }
 }

@@ -97,18 +97,10 @@
         </div>
       </section>
 
-      
-
-      <!-- <section class="max-width">
-        <h1>Wireframing the solution</h1>
-        
-        
-      </section> -->
-
       <section class="max-width">
         <h1>Validating the designs</h1>
         <div class="img--container"><img :src="uiCurrent1" alt="The new design 1"></div>
-        <div class="img--container"><img :src="uiCurrent2" alt="The new design 2"></div>
+        <!-- <div class="img--container"><img :src="uiCurrent2" alt="The new design 2"></div> -->
         <p>I conducted unmoderated usability tests via the platform <a href="https://www.usertesting.com/" target="_blank">usertesting.com</a>.</p>
         <p>I then compared the results between the old User Interface and the new User Interface and concluded:</p>
         <ul>
@@ -118,23 +110,52 @@
         </ul>
       </section>
 
+      <!-- example of the new UI -->
+      <!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fb0ZSSNtYsZPqTsvtCUyZaZ%2FNUI-Navigation-Baseline%3Fpage-id%3D0%253A1%26node-id%3D24-109347%26viewport%3D3720%252C1095%252C0.13%26t%3D9IO0BQSXVFfesEWV-1%26scaling%3Dscale-down%26starting-point-node-id%3D24%253A109347%26content-scaling%3Dfixed" allowfullscreen></iframe> -->
+
       <section class="bg">
         <div class="max-width">
-        <h1>Developing the solution</h1>
-        <p>I have a Front End Developer background and Gentrack did not have any front end developers.</p>
-        <p>With my knowledge of CSS &amp; Javascript, I was asked to get the ball rolling while we found a full-time front end developer for the role. I was able to:</p>
-        <ul>
-          <li>Pull the styles out of Figma and create a <a href="https://lesscss.org/" target="_blank">LESS</a> design framework for the front end</li>
-          <li>Restyle the content using Javascript</li>
-          <li>Help out the backend developers with any questions they had about CSS or Javascript</li>
-        </ul>
+          <h1>Developing the solution</h1>
+          <p>I have a Front End Developer background and Gentrack did not have any front end developers.</p>
+          <p>With my knowledge of CSS &amp; Javascript, I was able to:</p>
+          <ul>
+            <li>Take on the role of Lead Front End Developer, with assistance for 3 backend developers, completely reskin Velocity to look like the designs.</li>
+            <li>Pull the styles out of Figma and create a <a href="https://lesscss.org/" target="_blank">LESS</a> design framework for the front end</li>
+            <li>Help out the backend developers with any questions they had about CSS or Javascript</li>
+          </ul>
         </div>
       </section>
 
       <section class="max-width">
-        <h1>Project results</h1>
-        <p>The reskin of Velocity will be on-going for the next couple of years.</p>
-        <p>So far, we have had <strong>two large companies</strong> see the User Interface and have <strong>signed up as new users</strong></p>
+        <h1>On-going UX projects</h1>
+        <p>Velocity is an extremely large and complex piece of software. There are over 1000 screens that are generated across 17 different templates.</p>
+        <p>During the three years that I worked on this project, I had the chance to research, define, design and test many features. Here are some honourable mentions.</p>
+        <div class="tabs">
+          <div v-for="(tab, index) in tabs" :key="index" @click="activeTab = index" :class="{ 'active': activeTab === index }">
+            {{ tab }}
+          </div>
+        </div>
+        <div class="tab-content">
+          <div v-for="(data, index) in tabData" v-show="activeTab === index" :key="index">
+            <!-- Display your data for each tab here -->
+            <h2>{{ data.title }}</h2>
+            <p>{{ data.explanation }}</p>
+            <p>We wanted these benefits for our users:</p>
+            <ul>
+                <li v-for="(need, i) in data.userNeeds" :key="i">{{ need }}</li>
+            </ul>
+            <p>And an example of what we tested:</p>
+            <img style="max-width: 100%;" :src=data.image alt="Example Image">
+          </div>
+        </div>
+      </section>
+
+      <section class="bg">
+        <div class="max-width">
+          <h1>Project results</h1>
+          <p>The reskin of Velocity will be on-going for the next couple of years.</p>
+          <p>So far, we have had <strong>two large companies</strong> see the User Interface and have <strong>signed up as new users</strong></p>
+        </div>
       </section>
 
     </main>
@@ -159,8 +180,15 @@ import InformationArchitecture from "@/assets/velocity/information-architecture.
 
 import UiMobileUITesting from "@/assets/velocity/mobileUI-testing.png";
 
+
+
 import MoodMap1 from "@/assets/velocity/mood-map-1.png";
 import MoodMap2 from "@/assets/velocity/mood-map-2.png";
+
+import OngoingUXProjectLaunchpad from "@/assets/velocity/ongoing-ux-projects/launchpad.png";
+import OngoingUXProjectHelp from "@/assets/velocity/ongoing-ux-projects/help-center.png";
+import OngoingUXProjectLogin from "@/assets/velocity/ongoing-ux-projects/login.png";
+import OngoingUXProjectActivityLog from "@/assets/velocity/ongoing-ux-projects/activity-log.png";
 
 export default {
   name: "Project1",
@@ -179,8 +207,77 @@ export default {
       informationArchitecture: InformationArchitecture,
       moodMap1: MoodMap1,
       moodMap2: MoodMap2,
-      uiMobileUITesting: UiMobileUITesting
+      uiMobileUITesting: UiMobileUITesting,
+      activeTab: 0, // Index of the active tab
+      tabs: ['Launchpad', 'Login Screen', 'Help Menu', 'Activity Log'], // Names of the tabs
+      tabData: [ // Data for each tab
+        {
+          title: 'Launchpad',
+          explanation: 'The Launchpad is essentially the starting screen for Velocity. The current Velocity Launchpad is extremely outdated.',
+          userNeeds: [
+            "The ability to easily find a customer who is calling",
+            "The ability to see what tasks are assigned to them",
+            "The ability to access the most commonly used actions, quickly."
+          ],
+          image: OngoingUXProjectLaunchpad,
+        },
+        {
+          title: 'Login Screen',
+          explanation: 'The login screen is the first screen a user lands on when they start their day. Our existing login screen is extremely outdated.',
+          userNeeds: [
+            "The ability to easily login to start their day",
+            "Become inspired and moved by a beautiful landing page",
+            "The ability to reset their passwords quickly and efficiently"
+          ],
+          image: OngoingUXProjectLogin,
+        },
+        {
+          title: 'Help Menu',
+          explanation: 'The utilities industry is extremely complex. The help menu is designed to help users wrap their head around Utility based concepts within Velocity.',
+          userNeeds: [
+            "Easily find help within the software.",
+            "The ability to search for difficult utility-based subjects",
+            "The option to look up frequenrtly asked questions"
+          ],
+          image: OngoingUXProjectHelp,
+        },
+        {
+          title: 'Activity Log',
+          explanation: 'An activity log was needed as a history of customer communications is extremely important.',
+          userNeeds: [
+            "Easily see what has happened on a customer's account",
+            "Have a comprehensive understanding of a customer's account",
+          ],
+          image: OngoingUXProjectActivityLog,
+        },
+      ]
     };
   },
 };
 </script>
+
+<style scoped>
+  .tabs {
+    display: flex;
+  }
+  .tabs div {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    background-color: #f9f9f9;
+  }
+  .tabs div.active {
+    background-color: #fff;
+  }
+  .tab-content {
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 5px;
+    padding: 16px;
+  }
+
+  .tab-content p:last-child {
+    margin-bottom: 0 !important;
+  }
+</style>
