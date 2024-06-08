@@ -17,7 +17,7 @@ export default {
 <style>
 .project--container {
   width: 100%;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   display: flex;
   align-items: center;
   transition: all 0.4s;

@@ -71,6 +71,10 @@ html {
   font-family: "Rubik", sans-serif;
 }
 
+a {
+  color: #6533ff;
+}
+
 p {
   font-size: 18px;
   line-height: 1.2;
@@ -179,10 +183,11 @@ p, li {
 
 .router-link-exact-active {
   position: relative !important;
+  color: #6533ff !important;
 }
 .router-link-exact-active:after {
   content: "" !important;
-  background: black !important;
+  background: #6533ff !important;
   height: 2px !important;
   width: 100% !important;
   position: absolute !important;
@@ -442,9 +447,6 @@ header h2 {
 #project strong {
   font-weight: 400;
 }
-#project .bg {
-  background: #f0f4ff;
-}
 #project ul {
   list-style-type: disc;
   margin-block-start: 1em;
@@ -580,6 +582,10 @@ header h2 {
   color: white;
   align-self: flex-start;
   min-width: 220px;
+}
+
+.bg {
+  background: #f0f4ff;
 }
 
 #project .creative h2 {

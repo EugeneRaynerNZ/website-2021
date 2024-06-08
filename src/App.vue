@@ -124,7 +124,7 @@
             </svg>
           </a>
         </div>
-        <p>Eugene Rayner &copy; 2022</p>
+        <p>Eugene Rayner &copy; 2024</p>
       </div>
     </footer>
   </div>

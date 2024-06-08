@@ -65,10 +65,11 @@
 
 .router-link-exact-active{
     position: relative !important;
+    color: $primary !important;
 
     &:after{
         content: '' !important;
-        background: black !important;
+        background: $primary !important;
         height: 2px !important; 
         width: 100% !important;
         position: absolute !important;

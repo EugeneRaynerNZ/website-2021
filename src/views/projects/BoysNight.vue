@@ -104,7 +104,7 @@
                   <div class="letter uppercase">Y</div>
                   <div class="letter uppercase">Z</div>
                 </div>
-                <div class="arima letters--container">
+                <div class="source-sans letters--container">
                   <div class="letter lowercase">A</div>
                   <div class="letter lowercase">B</div>
                   <div class="letter lowercase">C</div>
@@ -134,7 +134,7 @@
                   <div class="letter lowercase">Z</div>
                 </div>
               </div>
-              <div class="arima letters--container">
+              <div class="source-sans letters--container">
                 <div class="letter lowercase">1</div>
                 <div class="letter lowercase">2</div>
                 <div class="letter lowercase">3</div>
