@@ -14,7 +14,7 @@
             <div class="left">
                 <h2>Overview</h2>
                 <p>Velocity is a utilities platform used by many small and large businesses across the globe.</p>
-                <p>The goal of this on-going project is to identify usability issues, as well as align the branding to make the software easier to use.</p>
+                <p>The goal of this ongoing project is to identify usability issues, as well as align the branding to make the software easier to use.</p>
             </div>
             <div class="right">
                 <h2>Role</h2>
@@ -63,7 +63,7 @@
         <p>My research encompassed:</p>
         <ul>
           <li>Understanding of user goals and needs.</li>
-          <li>Unconvering pain points with existing users journeys.</li>
+          <li>Uncovering pain points with existing user journeys.</li>
           <li>Mapping users mood while using the software.</li>
         </ul>
         <div class="img--container"><img :src="moodMap1" alt="Pulse Energy User Journey and Mood Map 1"></div>
@@ -76,9 +76,9 @@
         <h1>Workshop &amp; UX Outcomes</h1>
         <div class="img--container"><img :src="workshopCanvas" alt="Workshop"></div>
         <p>Beginning in March, we began workshopping to understand how we could transform our old software into something that our company and our customers would have pride in using.</p>
-        <p>Workshops were conducted over <strong>Teams</strong>, using <strong>Miro</strong>, as Gentrack's employees are spread out across the globe. Using a <strong>Lean UX approach</strong>, we were able to narrow down the fastest and best course of action to take to get <strong>Iteration One</strong> of MVP started.</p>
+        <p>Workshops were conducted over <strong>Teams</strong>, using <strong>Miro</strong>, as Gentrack's employees are spread out across the globe. Using a <strong>Lean UX</strong> approach, we were able to narrow down the fastest and best course of action to get <strong>Iteration One of the MVP</strong> started.</p>
         <div class="img--container"><img :src="workshopHMW" alt="How Might We"></div>
-        <p>Based off the workshop, we were able to narrow down what MVP1 might look like:</p>
+        <p>Based off the workshop, we were able to narrow down what MVP might look like:</p>
         <ul>
           <li>Users have the ability to see a holistic view of the customer they are speaking with.</li>
           <li>Users take less time to complete a task.</li>
@@ -90,7 +90,7 @@
       <section class="bg">
         <div class="max-width">
           <h1>Testing the current state</h1>
-          <p>We prepped the current state of the User Interface by conducting unmoderated tests internally with users who had experience on the current platform.</p>
+          <p>We prepared the current state of the user interface by conducting unmoderated tests internally with users who had experience on the current platform.</p>
           <p>Knowing what the most common User Journeys were from our Pulse Energy workshops, I developed a test which we would replicate for the new User Interface that would be designed.</p>
           <div class="img--container"><img :src="uiMobileUITesting" alt="Current landscape"></div>
           <p>Doing this would make comparing our new User Interface with our old one much easier.</p>
@@ -104,14 +104,14 @@
         <p>I conducted unmoderated usability tests via the platform <a href="https://www.usertesting.com/" target="_blank">usertesting.com</a>.</p>
         <p>I then compared the results between the old User Interface and the new User Interface and concluded:</p>
         <ul>
-          <li>Users took less time on average to complete a task</li>
+          <li>Users took <strong>25% less time on average</strong> to complete a task</li>
           <li>Users knew where they were in the system</li>
           <li>Users knew what their next best action was</li>
         </ul>
       </section>
 
       <!-- example of the new UI -->
-      <!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fb0ZSSNtYsZPqTsvtCUyZaZ%2FNUI-Navigation-Baseline%3Fpage-id%3D0%253A1%26node-id%3D24-109347%26viewport%3D3720%252C1095%252C0.13%26t%3D9IO0BQSXVFfesEWV-1%26scaling%3Dscale-down%26starting-point-node-id%3D24%253A109347%26content-scaling%3Dfixed" allowfullscreen></iframe> -->
+      <!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fb0ZSSNtYsZPqTsvtCUyZaZ%2FNUI-Navigation-Baseline%3Fpage-id%3D0%253A1%26node-id%3D24-109347%26viewport%3D3720%252C1095%252C0.13%26t%3D9IO0BQSXVFfesEWV-1%26scaling%3Dscale-down%26starting-point-node-id%3D24%253A109347%26content-scaling%3Dfixed&hide-ui=1" allowfullscreen></iframe> -->
 
       <section class="bg">
         <div class="max-width">
@@ -119,9 +119,9 @@
           <p>I have a Front End Developer background and Gentrack did not have any front end developers.</p>
           <p>With my knowledge of CSS &amp; Javascript, I was able to:</p>
           <ul>
-            <li>Take on the role of Lead Front End Developer, with assistance for 3 backend developers, completely reskin Velocity to look like the designs.</li>
-            <li>Pull the styles out of Figma and create a <a href="https://lesscss.org/" target="_blank">LESS</a> design framework for the front end</li>
-            <li>Help out the backend developers with any questions they had about CSS or Javascript</li>
+            <li>Take on the role of Lead Frontend Developer, with assistance from 3 Backend developers, completely reskin Velocity to look like the designs.</li>
+            <li>Pull the styles out of Figma and create a <a href="https://lesscss.org/" target="_blank">LESS</a> design framework for the front end.</li>
+            <li>Help out the backend developers with any questions they had about CSS or Javascript.</li>
           </ul>
         </div>
       </section>
@@ -153,8 +153,8 @@
       <section class="bg">
         <div class="max-width">
           <h1>Project results</h1>
-          <p>The reskin of Velocity will be on-going for the next couple of years.</p>
-          <p>So far, we have had <strong>two large companies</strong> see the User Interface and have <strong>signed up as new users</strong></p>
+          <p>We have had <strong>incredibly positive feedback</strong> from internal stakeholders, as well as perspective customers.</p>
+          <p>So far, we have had <strong>three large companies</strong> see the User Interface and have <strong>signed up as new users</strong></p>
         </div>
       </section>
 

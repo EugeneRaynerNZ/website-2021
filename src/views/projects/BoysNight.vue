@@ -235,13 +235,14 @@
           <h1>Prototyping</h1>
           <p>I like to create Figma prototypes as a point of reference so that I can refer back to what I am wanting to create at a glance while I code the project.</p>
           <p>Sometimes I like to create these prototypes in a way which show animation which allow others greater visibility over what I am wanting to create.</p>
-          <iframe width="100%" height="925" style="max-width: 800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT9Rfeh6cCidjQpFoAActWy%2FFreejoas%3Fpage-id%3D3%253A3%26node-id%3D701-212%26viewport%3D-7669%252C-5021%252C0.25%26t%3DLSuMjRolmLfxYzlb-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D701%253A212" allowfullscreen></iframe>
+          <iframe width="100%" height="925" style="max-width: 800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT9Rfeh6cCidjQpFoAActWy%2FFreejoas%3Fpage-id%3D3%253A3%26node-id%3D701-212%26viewport%3D-7669%252C-5021%252C0.25%26t%3DLSuMjRolmLfxYzlb-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D701%253A212&hide-ui=1" allowfullscreen></iframe>
         </div>
       </section>
 
       <section class="max-width">
         <h1>Creating a working version</h1>
         <p>I began by building a simple Front End using <a target="_blank" href="https://react.dev">React Native</a>. I want Boys Night to be available on both Android and Apple devices.</p>
+        <p>I worked with a graduate backend developer; <a target="_blank" href="https://github.com/wsking233">William Wang</a> - who needed some real world experience to add to his portfolio. William has been extremely helpful as my knowledge of backend development is an area that needs to be worked on.</p>
         <p>Boys Night functionality is nothing out of the ordinary. I opted to use <a target="_blank" href="https://expo.dev">Expo</a> to create the application on both Android and Apple devices.</p>
         <p>I chose React Native as it is something I am still learning and wanted to learn while also creating.</p>
         <p>I also chose to use <a target="_blank" href="https://sass-lang.com">Sass</a> - a preprocessor for CSS which makes it easier to:</p>

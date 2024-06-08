@@ -287,8 +287,7 @@
         <section class="bg">
           <div class="max-width">
             <h1>Prototyping</h1>
-            <p>I worked with a graduate backend developer; <a target="_blank" href="https://github.com/wsking233">William Wang</a> - who needed some real world experience to add to his portfolio. William has been extremely helpful as my knowledge of backend development is an area that needs to be worked on.</p>
-            <iframe width="100%" height="925" style="max-width: 800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT9Rfeh6cCidjQpFoAActWy%2FFreejoas%3Fpage-id%3D3%253A3%26node-id%3D795-943%26viewport%3D-7669%252C-5021%252C0.25%26t%3DAkegz8emF6EbsiFf-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D795%253A943" allowfullscreen></iframe>
+            <iframe width="100%" height="925" style="max-width: 800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT9Rfeh6cCidjQpFoAActWy%2FFreejoas%3Fpage-id%3D3%253A3%26node-id%3D795-943%26viewport%3D-7669%252C-5021%252C0.25%26t%3DAkegz8emF6EbsiFf-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D795%253A943&hide-ui=1" allowfullscreen></iframe>
           </div>
         </section>
   

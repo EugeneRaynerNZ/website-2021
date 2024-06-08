@@ -17,8 +17,8 @@
         <h1 style="margin-bottom: 16px">I like to think outside of the box.</h1>
         <p>I like to create things that others have not created.</p>
 
-        <h2 style="margin-top: 48px">Figma Piano (can take a second to load properly)</h2>
-        <iframe width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWxm6FWxjXIl70biNNEu2FX%2FPortfolio%3Fpage-id%3D122%253A26431%26node-id%3D122-26666%26viewport%3D491%252C449%252C0.68%26t%3DD34vlomGliON0mTg-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D122%253A26666" allowfullscreen></iframe>
+        <h2 style="margin-top: 48px">Figma Piano (may take a moment to load properly).</h2>
+        <iframe width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWxm6FWxjXIl70biNNEu2FX%2FPortfolio%3Fpage-id%3D122%253A26431%26node-id%3D122-26666%26viewport%3D491%252C449%252C0.68%26t%3DD34vlomGliON0mTg-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D122%253A26666&hide-ui=1" allowfullscreen></iframe>
 
         <h2 style="margin-top: 48px">Auto generated double sided confetti</h2>
         <iframe height="300" style="width: 100%;" scrolling="no" title="Confetti (GSAP)" src="https://codepen.io/erayner/embed/ExYEByL?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
@@ -55,15 +55,8 @@
 
       <section class="max-width">
         <h1>This website was built using Javascript</h1>
-        <p>
-          I love coding. Coming from a front end background, I can't help but
-          create custom components when I want to.
-        </p>
-        <p>
-          This website is built using
-          <a href="https://vuejs.org/">Vue.js</a> which is a Javascript
-          framework similar to React.
-        </p>
+        <p>I love coding. Coming from a front end background, I can't help but create custom components when I want to.</p>
+        <p>This website is built using <a href="https://vuejs.org/">Vue.js</a> which is a Javascript framework similar to <a href="https://react.dev/">React</a>.</p>
       </section>
     </main>
   </div>
@@ -77,9 +70,6 @@ export default {
   data() {
     return {
       me: Me,
-      soundclouds: [
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/133672309&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
-      ],
     };
   },
 };
