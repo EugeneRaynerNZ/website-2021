@@ -11,7 +11,7 @@ module.exports = {
  configureWebpack: {
    plugins: [
      new PrerenderSPAPlugin({
-       indexPath: path.resolve('dist/index.html'),
+       indexPath: path.resolve('dist/i.html'),
        staticDir: path.resolve('dist'),
        routes: [ '/', '/creations', '/code', '/design', '/contact'],
      }),
