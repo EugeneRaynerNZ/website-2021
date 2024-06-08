@@ -127,7 +127,7 @@
       </section>
 
       <section class="max-width">
-        <h1>On-going UX projects</h1>
+        <h1>Ongoing UX projects</h1>
         <p>Velocity is an extremely large and complex piece of software. There are over 1000 screens that are generated across 17 different templates.</p>
         <p>During the three years that I worked on this project, I had the chance to research, define, design and test many features. Here are some honourable mentions.</p>
         <div class="tabs">
