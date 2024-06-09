@@ -2,7 +2,7 @@
   <div id="project" class="projectContent--mobile">
     <!-- logo n stuff goes here -->
     <header class="projectHeader projectHeaderVelocity">
-      <img :src="velocityLanding" />
+      <img :src="uiCurrent1" />
     </header>
 
     <!-- Projects -->

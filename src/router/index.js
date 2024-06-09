@@ -62,6 +62,7 @@ const router = new VueRouter({
   routes,
   scrollBehavior() {
     document.getElementById('app').scrollIntoView();
+    return { top: 0, left: 0 }
   }
 })
 
