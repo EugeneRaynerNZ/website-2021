@@ -60,18 +60,18 @@ const routes = [
 const router = new VueRouter({
   mode: "history",
   routes,
-  scrollBehavior() {
-    document.getElementById('app').scrollIntoView();
-    return { top: 0, left: 0 }
-  }
+  // scrollBehavior() {
+  //   document.getElementById('app').scrollIntoView();
+  //   return { top: 0, left: 0 }
+  // }
 })
 
-router.beforeEach((to, from, next) => {
-  console.log(to)
-  if(to !== undefined){
-    document.title = `${process.env.VUE_APP_TITLE} | ${to.name}`
-  }
-  next()
-}) 
+// router.beforeEach((to, from, next) => {
+//   console.log(to)
+//   if(to !== undefined){
+//     document.title = `${process.env.VUE_APP_TITLE} | ${to.name}`
+//   }
+//   next()
+// }) 
 
 export default router

@@ -14,7 +14,7 @@
       </div>
     </nav>
 
-    <router-view />
+    <router-view :key="$route.fullPath" />
     </template>
     
     <div v-else style="display: flex; padding: 30px; width: calc(100% - 80px); height: calc(100vh - 80px); align-items: center; justify-content: center; text-align: center">
