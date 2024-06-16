@@ -11,7 +11,7 @@
       <section style="display: flex; flex-direction: column; gap: 16px;">
         <!-- Projects -->
         <h3 style="font-weight: 500;">Recent Professional Projects</h3>
-        <div style="display: flex; flex-direction: column; gap: 32px;">
+        <div class="project--img-container">
           <Project
             v-for="(project, index) in professionalProjects"
             :key="'project-' + index"
@@ -23,7 +23,7 @@
 
       <section style="display: flex; flex-direction: column; gap: 16px;">
         <h3 style="font-weight: 500;">Recent Side Projects</h3>
-        <div style="display: flex; flex-direction: column; gap: 32px;">
+        <div class="project--img-container">
           <!-- Projects -->
           <Project
             v-for="(project, index) in personalProjects"

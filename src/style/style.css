@@ -411,6 +411,7 @@ header h2 {
 
 #home h2 {
   margin: 16px 0;
+  line-height: 1.5;
 }
 #home p {
   margin-top: 32px;
@@ -418,6 +419,11 @@ header h2 {
 }
 #home h3 {
   font-weight: 100;
+}
+#home .project--img-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 #project.pos-forecasting .projectHeader {
@@ -652,8 +658,7 @@ header h2 {
     margin-bottom: 30px;
   }
   .max-width {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
   }
   header {
     padding: 80px 0 60px 0;
@@ -695,7 +700,7 @@ header h2 {
     top: 0;
     left: 0;
     background: white;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
   .nav .max-width {
     margin: 0;
@@ -707,14 +712,17 @@ header h2 {
     margin-left: 0;
     margin-right: 40px;
   }
+  #home .project--img-container {
+    gap: 16px;
+  }
+  #home p {
+    margin-top: 0;
+  }
   .mainContent--mobile {
-    margin-top: 90px;
+    margin-top: 65px;
   }
   .projectContent--mobile {
     margin-top: 60px;
-  }
-  .project--container {
-    margin-bottom: 20px !important;
   }
   #project .projectHeader img {
     max-width: 90%;
