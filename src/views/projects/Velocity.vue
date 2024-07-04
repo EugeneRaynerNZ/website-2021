@@ -1,5 +1,8 @@
 <template>
   <div id="project" class="projectContent--mobile">
+
+    <BackToTop />
+
     <!-- logo n stuff goes here -->
     <header class="projectHeader projectHeaderVelocity">
       <img :src="uiCurrent1" />
@@ -177,21 +180,21 @@ import WorkshopCanvas from "@/assets/velocity/workshop-canvas.png";
 import WorkshopHMW from "@/assets/velocity/workshop-hmw.png";
 import WorkshopProcess from "@/assets/velocity/workshop-process.png";
 import InformationArchitecture from "@/assets/velocity/information-architecture.png";
-
 import UiMobileUITesting from "@/assets/velocity/mobileUI-testing.png";
-
-
-
 import MoodMap1 from "@/assets/velocity/mood-map-1.png";
 import MoodMap2 from "@/assets/velocity/mood-map-2.png";
-
 import OngoingUXProjectLaunchpad from "@/assets/velocity/ongoing-ux-projects/launchpad.png";
 import OngoingUXProjectHelp from "@/assets/velocity/ongoing-ux-projects/help-center.png";
 import OngoingUXProjectLogin from "@/assets/velocity/ongoing-ux-projects/login.png";
 import OngoingUXProjectActivityLog from "@/assets/velocity/ongoing-ux-projects/activity-log.png";
 
+import BackToTop from '../../components/BackToTop.vue';
+
 export default {
-  name: "Project1",
+  name: "Velocity Project",
+  components: {
+    BackToTop,
+  },
   data() {
     return {
       velocityLanding: VelocityLanding,

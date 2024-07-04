@@ -30,5 +30,6 @@ export default {
 
 .project--container img{
     max-width: 100%;
+    border-radius: 8px;
 }
 </style>

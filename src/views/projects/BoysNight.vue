@@ -1,5 +1,8 @@
 <template>
   <div id="project" class="projectContent--mobile">
+
+    <BackToTop />
+
     <!-- logo n stuff goes here -->
     <header class="projectHeader projectHeaderBoysNight">
       <img :src="landing" />
@@ -8,7 +11,7 @@
     <!-- Projects -->
     <main>
       <section class="max-width mainSection">
-        <h1>Boys Night App Creation</h1>
+        <h1>Boys Night Design & Development</h1>
 
         <div class="containerLeftRight">
             <div class="left">
@@ -235,7 +238,7 @@
           <h1>Prototyping</h1>
           <p>I like to create Figma prototypes as a point of reference so that I can refer back to what I am wanting to create at a glance while I code the project.</p>
           <p>Sometimes I like to create these prototypes in a way which show animation which allow others greater visibility over what I am wanting to create.</p>
-          <iframe width="100%" height="925" style="max-width: 800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT9Rfeh6cCidjQpFoAActWy%2FFreejoas%3Fpage-id%3D3%253A3%26node-id%3D701-212%26viewport%3D-7669%252C-5021%252C0.25%26t%3DLSuMjRolmLfxYzlb-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D701%253A212&hide-ui=1" allowfullscreen></iframe>
+          <iframe width="100%" height="925" style="max-width: 800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FL7AQPCESz0nL8TkDBWJAFV%2FBoys-Night%3Fpage-id%3D1%253A2326%26node-id%3D2001-274%26viewport%3D1451%252C1745%252C0.45%26t%3DRObhLInuld10WF55-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26starting-point-node-id%3D2001%253A274&hide-ui=1" allowfullscreen></iframe>
         </div>
       </section>
 
@@ -269,13 +272,17 @@
 
 <script>
 import Landing from "@/assets/boys-night/landing.png";
-
 import Sketches from "@/assets/boys-night/creative-illustrations.png";
 import ColourPaletteA from "@/assets/boys-night/primary-colour.png";
 import ColourPaletteB from "@/assets/boys-night/secondary-colour.png";
 
+import BackToTop from '../../components/BackToTop.vue';
+
 export default {
-  name: "Boys Night",
+  name: "Boys Night Project",
+  components: {
+    BackToTop,
+  },
   data() {
     return {
       landing: Landing,

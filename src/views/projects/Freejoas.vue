@@ -1,5 +1,7 @@
 <template>
     <div id="project" class="projectContent--mobile">
+
+      <BackToTop />
       <!-- logo n stuff goes here -->
       <header class="projectHeader projectHeaderFreejoas">
         <img :src="landing" />
@@ -8,7 +10,7 @@
       <!-- Projects -->
       <main>
         <section class="max-width mainSection">
-          <h1>Freejoas App Creation</h1>
+          <h1>Freejoas Design & Development</h1>
   
           <div class="containerLeftRight">
               <div class="left">
@@ -287,7 +289,11 @@
         <section class="bg">
           <div class="max-width">
             <h1>Prototyping</h1>
-            <iframe width="100%" height="925" style="max-width: 800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT9Rfeh6cCidjQpFoAActWy%2FFreejoas%3Fpage-id%3D3%253A3%26node-id%3D795-943%26viewport%3D-7669%252C-5021%252C0.25%26t%3DAkegz8emF6EbsiFf-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D795%253A943&hide-ui=1" allowfullscreen></iframe>
+            <h4 style="margin-bottom: 16px;">Mobile Journey</h4>
+            <iframe width="100%" height="925" style="max-width: 800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FB7vXKMc10fHIsYhxfRxA1h%2FFreejoas%3Fpage-id%3D1%253A2326%26node-id%3D1-3891%26viewport%3D574%252C246%252C0.2%26t%3D8oUwSFBIHemxZeK6-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26starting-point-node-id%3D1%253A3891&hide-ui=1" allowfullscreen></iframe>
+            <h4 style="margin-bottom: 16px; margin-top: 32px;">Desktop Journey</h4>
+            <iframe width="100%" height="570" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FB7vXKMc10fHIsYhxfRxA1h%2FFreejoas%3Fpage-id%3D79%253A5305%26node-id%3D79-5340%26viewport%3D1851%252C308%252C0.26%26t%3Disf8U315WfltmViM-1%26scaling%3Dscale-down-width%26content-scaling%3Dfixed%26starting-point-node-id%3D79%253A5340&hide-ui=1" allowfullscreen></iframe>
+            <p>We wanted to </p>
           </div>
         </section>
   
@@ -338,9 +344,14 @@
   import LogoOptionA from "@/assets/freejoas/logo-option--a.png";
   import LogoOptionB from "@/assets/freejoas/logo-option--b.png";
   import LogoOptionC from "@/assets/freejoas/logo-option--c.png";
+
+  import BackToTop from '../../components/BackToTop.vue';
   
   export default {
-    name: "Freejoas",
+    name: "Freejoas Project",
+    components: {
+      BackToTop,
+    },
     data() {
       return {
         landing: Landing,

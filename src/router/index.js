@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import Velocity from '@/views/projects/Velocity.vue'
 import Freejoas from '@/views/projects/Freejoas.vue'
+import UpSkill from '@/views/projects/UpSkill.vue'
 import BoysNight from '@/views/projects/BoysNight.vue'
 // import POSForecasting from '@/views/projects/POSForecasting.vue'
 import Play from '@/views/Play.vue'
@@ -39,7 +40,12 @@ const routes = [
     component: Freejoas
   },
   {
-    path: '/Boys-night',
+    path: '/up-skill',
+    name: 'UpSkill',
+    component: UpSkill
+  },
+  {
+    path: '/boys-night',
     name: 'BoysNight',
     component: BoysNight
   },
