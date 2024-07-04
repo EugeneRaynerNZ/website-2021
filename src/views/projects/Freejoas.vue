@@ -293,7 +293,7 @@
             <iframe width="100%" height="925" style="max-width: 800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FB7vXKMc10fHIsYhxfRxA1h%2FFreejoas%3Fpage-id%3D1%253A2326%26node-id%3D1-3891%26viewport%3D574%252C246%252C0.2%26t%3D8oUwSFBIHemxZeK6-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26starting-point-node-id%3D1%253A3891&hide-ui=1" allowfullscreen></iframe>
             <h4 style="margin-bottom: 16px; margin-top: 32px;">Desktop Journey</h4>
             <iframe width="100%" height="570" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FB7vXKMc10fHIsYhxfRxA1h%2FFreejoas%3Fpage-id%3D79%253A5305%26node-id%3D79-5340%26viewport%3D1851%252C308%252C0.26%26t%3Disf8U315WfltmViM-1%26scaling%3Dscale-down-width%26content-scaling%3Dfixed%26starting-point-node-id%3D79%253A5340&hide-ui=1" allowfullscreen></iframe>
-            <p>We wanted to </p>
+            <!-- <p>We wanted to create an experience for desktop users so have decided to </p> -->
           </div>
         </section>
   
