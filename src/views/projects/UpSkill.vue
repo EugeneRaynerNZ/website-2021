@@ -5,7 +5,7 @@
   
       <!-- logo n stuff goes here -->
       <header class="projectHeader projectHeaderBoysNight">
-        <img :src="landing" />
+        <img :src="landing" alt="Example image of product"/>
       </header>
   
       <!-- Projects -->
@@ -60,13 +60,15 @@
 
             <h2 style="margin-top: 32px;">The learning Dashboard</h2>
             <p>The user lands on a dashboard showing what task they need to do.</p>
-            <p>Upskill splits a learning jounrey into Subjects, Topics and Tasks. Subjects exist inside of a Learning Journey, Topics exist inside of Subjects, and Tasks exist inside of Topics. Users tackle tasks.</p>
+            <p>Upskill splits a learning journey into Subjects, Topics and Tasks. Subjects exist inside of a Learning Journey, Topics exist inside of Subjects, and Tasks exist inside of Topics. Users tackle tasks.</p>
             <p>The dashboard also provides:</p>
             <ul>
                 <li>Visual learning progress towards a topic, subject and overall learning journey</li>
                 <li>Progress towards goals set by user</li>
                 <li>Visual summary of what has been learnt and what the user needs to learn.</li>
             </ul>
+
+            <img :src="dashboard" alt="Example image of product"/>
         </section>
   
         <section class="bg">
@@ -107,6 +109,7 @@
 <script>
 import BackToTop from '../../components/BackToTop.vue';
 import Landing from "@/assets/upskill/landing-page.png";
+import Dashboard from "@/assets/upskill/Dashboard.png";
   
 export default {
     name: "Up Skill Project",
@@ -115,7 +118,8 @@ export default {
     },
     data() {
         return {
-        landing: Landing,
+          landing: Landing,
+          dashboard: Dashboard,
         };
     },
 };
