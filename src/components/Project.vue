@@ -21,6 +21,7 @@ export default {
   display: flex;
   align-items: center;
   transition: all 0.4s;
+  border-radius: 8px;
 }
 
 .project--container:hover{
