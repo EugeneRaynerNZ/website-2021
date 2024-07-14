@@ -68,7 +68,7 @@
                 <li>Visual summary of what has been learnt and what the user needs to learn.</li>
             </ul>
 
-            <img :src="dashboard" alt="Example image of product"/>
+            <img :src="dashboard" style="width: 100%;" alt="Example image of product"/>
         </section>
   
         <section class="bg">
