@@ -47,7 +47,7 @@ import Me from "@/assets/me.svg";
 import Velocity from "@/assets/velocity.png";
 import UpSkiller from "@/assets/upskiller.png";
 import Freejoas from "@/assets/freejoas.png";
-import BoysNight from "@/assets/boys-night.png";
+// import BoysNight from "@/assets/boys-night.png";
 // import POSForecasting from "@/assets/pos-forecasting/pos-forecasting.png";
 
 
@@ -77,10 +77,6 @@ export default {
         {
           img: UpSkiller,
           link: "up-skill",
-        },
-        {
-          img: BoysNight,
-          link: "boys-night",
         },
       ],
     };
